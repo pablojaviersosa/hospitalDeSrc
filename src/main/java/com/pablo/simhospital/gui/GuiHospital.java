@@ -22,11 +22,11 @@ import javax.swing.SwingWorker;
 import main.java.com.pablo.simhospital.configuracion.ConfigGuiPaths;
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
 import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
+import main.java.com.pablo.simhospital.configuracion.MusicaGui;
 import main.java.com.pablo.simhospital.configuracion.ValoresPorDefectoGui;
 import main.java.com.pablo.simhospital.hospital.Simulacion;
 import main.java.com.pablo.simhospital.util.Archivo;
 import main.java.com.pablo.simhospital.util.CorreccionHorario;
-import main.java.com.pablo.simhospital.util.MusicaGui;
 
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -34,6 +34,7 @@ import org.apache.log4j.PropertyConfigurator;
 public class GuiHospital implements ActionListener, MouseMotionListener {
 	private static ExecutorService hiloMusical;
 	private static Logger log = Logger.getLogger("LoggerGui");
+	private static String homePath;
 	private JFrame frmHospital;
 	// Configuraciones de iconos funetes y mensajes
 	private Configuracion config;
@@ -61,6 +62,8 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	};
 
 	public static void main(String[] args) {
+		
+		setHomePath("/main/config/");
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -80,7 +83,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	private void initialize() {
 		// carga las propiedades de todos los recursos del sitema y los
 		// instancia
-		config = new Configuracion("src/main/config/common.properties");
+		config = new Configuracion(getHomePath()+"common.properties"); //"src/main/config/common.properties"
 		configurarLogger();
 		//musica
 		hiloMusical = Executors.newCachedThreadPool();
@@ -617,5 +620,13 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 
 	public void setSimulGui(SimulacionGui simulGui) {
 		this.simulGui = simulGui;
+	}
+
+	public static String getHomePath() {
+		return homePath;
+	}
+
+	public static void setHomePath(String homePath) {
+		GuiHospital.homePath = homePath;
 	}
 }

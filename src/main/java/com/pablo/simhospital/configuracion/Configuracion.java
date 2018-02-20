@@ -1,6 +1,5 @@
 package main.java.com.pablo.simhospital.configuracion;
 
-import main.java.com.pablo.simhospital.util.MusicaGui;
 
 public class Configuracion {
 	 private static ValoresPorDefectoGui valoresDef;

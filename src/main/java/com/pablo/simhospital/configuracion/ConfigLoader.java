@@ -1,18 +1,24 @@
 package main.java.com.pablo.simhospital.configuracion;
 
 import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 import java.util.Properties;
 
 public class ConfigLoader {
-
+	static InputStream input;
 	public static void load(Class<?> configClass, String file) {
 		try {
 			Properties props = new Properties();
-			try (FileInputStream propStream = new FileInputStream(file)) {
-				props.load(propStream);
+			try {
+				input = new FileInputStream(file);
+				
+			}catch (IOException e) {
+				input = InputStream.class.getResourceAsStream(file);
 			}
+			props.load(input);
 			for (Field field : configClass.getDeclaredFields())
 				if (Modifier.isStatic(field.getModifiers()))
 					field.set(null,

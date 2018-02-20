@@ -35,7 +35,7 @@ public class Paciente implements Comparable<Paciente> {
 	 * @param _tLlegada
 	 *            Tiempo de llegada.
 	 * @param _tipoPrioridad
-	 *            Tipo de prioridad, almra, media, baja.
+	 *            Tipo de prioridad, alta, media, baja.
 	 */
 	public Paciente(int _tLlegada, int _tipoPrioridad) {
 		tLlegada = _tLlegada;

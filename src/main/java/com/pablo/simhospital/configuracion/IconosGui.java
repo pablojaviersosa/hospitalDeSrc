@@ -45,6 +45,8 @@ public class IconosGui {
 	}
 
 	private void load() {
+		System.out.println(getPathRecursoIconos()
+						+ getIconLogStr());
 		setIconLog(new ImageIcon(
 				SimulacionGui.class.getResource(getPathRecursoIconos()
 						+ getIconLogStr())));

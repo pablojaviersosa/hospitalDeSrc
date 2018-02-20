@@ -23,7 +23,6 @@ public class Simulacion {
 	private static Logger log = Logger.getLogger("LoggerGui.Simulacion");
 
 	private Cola colaPacientes;
-	private List<Doctor> doctores;
 	private List<PeriodoDia> periodos;
 	private Estadistica estadistica;
 	private ExecutorService poolDeDoctores = null;
@@ -37,15 +36,7 @@ public class Simulacion {
 	 * Contructor 1 Inicializa los parametros por defecto.
 	 */
 	public Simulacion() {
-		Simulacion.setBaseMinutoMs(40);
-
-		periodos = new ArrayList<PeriodoDia>();
-		colaPacientes = new Cola();
-		estadistica = new Estadistica(0, 0, 0, 0, 0, 0, 0);
-		doctores = new ArrayList<Doctor>();
-		setTermino(false);
-		log.info("Inicializa Simulacion");
-
+		iniciar(40);
 	}
 
 	/**
@@ -55,13 +46,15 @@ public class Simulacion {
 	 *            Se utiliza para la velocidad de la simulación.
 	 */
 	public Simulacion(int baseTiempo) {
+		iniciar(baseTiempo);
+	}
+
+	public void iniciar(int baseTiempo) {
 
 		Simulacion.setBaseMinutoMs(baseTiempo);
-
 		periodos = new ArrayList<PeriodoDia>();
 		colaPacientes = new Cola();
 		estadistica = new Estadistica(0, 0, 0, 0, 0, 0, 0);
-		doctores = new ArrayList<Doctor>();
 		setTermino(false);
 
 	}
@@ -79,14 +72,6 @@ public class Simulacion {
 	 * @throws FileNotFoundException
 	 */
 	public void cargarArchivo(String nombre) throws FileNotFoundException {
-		// File archivo = new File(path);
-		// URL url = getClass().getResource(nombre);
-		// if (url == null){
-		// log.info("No pude acceder al archivo:" + nombre +"\n" +
-		// System.getProperty("user.dir"));
-		// }
-		// File archivo = new File(url.getPath());
-
 		Scanner lector = new Scanner(getClass().getResourceAsStream(nombre));
 		while (lector.hasNext()) {
 			String linea = lector.nextLine();
@@ -136,16 +121,13 @@ public class Simulacion {
 		// defualt de 1 doctor
 		if (docs < 1)
 			docs = 1;
-
-		for (int i = 0; i < docs; i++) {
-			doctores.add(new Doctor("" + i, this, colaPacientes));
-		}
-
+		//Inicializa el pool de doctores
 		poolDeDoctores = Executors.newCachedThreadPool();
 		// LOG
 		log.info("Ejecuta los Doctores: " + docs);
-		for (Doctor d : doctores)
-			poolDeDoctores.execute(d);
+		//Agrega la cantidad de doctores seteada
+		for (int i = 0; i < docs; i++)
+			poolDeDoctores.execute(new Doctor("" + i, this, colaPacientes));
 
 		// Ciclo principal de simulacion
 		while (tInicio < tFin || colaPacientes.isNotEmpty()) {
@@ -154,12 +136,11 @@ public class Simulacion {
 
 			Thread.sleep(Simulacion.getBaseMinutoMs());
 			if (tInicio < tFin) {
-				if (Aleatorio.real(0, 1) < porcentaje) {
+				if (Aleatorio.real(0, 1) < porcentaje) {//probabilidad de ingreseo de un paciente a la sala
 					// Ingreso paciente
 					PeriodoDia p = buscarPeriodo(tInicio);
-					if (p == null) {
+					if (p == null) 
 						p = (periodos.get(periodos.size() - 1));
-					}
 					double[] probsActuales = p.getProbs();
 					double prioridad = Aleatorio.real(0, 1);
 					if (prioridad < probsActuales[0]) {
@@ -292,7 +273,7 @@ public class Simulacion {
 			poolDeDoctores.shutdown();
 			try {
 				if (!poolDeDoctores.awaitTermination(1, TimeUnit.SECONDS)) {
-					poolDeDoctores.shutdownNow(); 
+					poolDeDoctores.shutdownNow();
 					if (!poolDeDoctores.awaitTermination(1, TimeUnit.SECONDS))
 						System.err.println("poolDeDoctores did not terminate");
 				}

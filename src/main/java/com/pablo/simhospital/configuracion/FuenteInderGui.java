@@ -4,10 +4,11 @@ import java.awt.Font;
 import java.io.FileInputStream;
 import java.io.InputStream;
 
-public final class FuenteInderGui extends Fuente {
+public final class FuenteInderGui {
+	static String homePath;
 	static String pathRecursoFuente;
 	static String nombreRecursoFuente;
-
+//array inderbold
 	static int inderBold10;
 	static int inderBold15;
 	static int inderBold20;
@@ -40,10 +41,11 @@ public final class FuenteInderGui extends Fuente {
 
 	private void loadTipografia() {
 		try {
+			String s = pathRecursoFuente
+					+ nombreRecursoFuente;
 			setFontTipografia(Font.createFont(
 					Font.TRUETYPE_FONT,
-					InputStream.class.getResourceAsStream(pathRecursoFuente
-							+ nombreRecursoFuente)));
+					InputStream.class.getResourceAsStream( s)));
 
 		} catch (Exception e) {
 			e.printStackTrace();

@@ -3,6 +3,7 @@ package main.java.com.pablo.simhospital.configuracion;
 public class IdiomaGui {
 	static String pathRecursoIdiomas;
 	static String idiomaElegido;
+	static String homePath;
 	/* TXT */
 	static String tituloHospitalMsj;
 	static String cantidadDeDoctoresMsj;
@@ -35,9 +36,13 @@ public class IdiomaGui {
 		load();
 	}
 	private void load(){
-		ConfigLoader.load(IdiomaGui.class, getpathRecursoIdiomas()+getIdiomaElegido()+".properties");
+		ConfigLoader.load(IdiomaGui.class, getHomePath()+getpathRecursoIdiomas()+getIdiomaElegido()+".properties");
 	}
 
+	private String getHomePath() {
+		// TODO Auto-generated method stub
+		return homePath;
+	}
 	private String getpathRecursoIdiomas() {
 		// TODO Auto-generated method stub
 		return pathRecursoIdiomas;
@@ -180,6 +185,9 @@ public class IdiomaGui {
 	}
 	public static void setErrorAlcargarLogger(String errorAlcargarLogger) {
 		IdiomaGui.errorAlcargarLogger = errorAlcargarLogger;
+	}
+	public static void setHomePath(String homePath) {
+		IdiomaGui.homePath = homePath;
 	}
 	
 }
