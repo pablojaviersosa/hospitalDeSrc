@@ -1,12 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- WARNING: Eclipse auto-generated file.
-              Any modifications will be overwritten.
-              To include a user specific buildfile here, simply create one in the same
-              directory with the processing instruction <?eclipse.ant.import?>
-              as the first entry and export the buildfile again. -->
-	<project default="build" name="hospitalDeSrc">
+    
+    <project default="build" name="hospitalDeSrc">
+    <property file="common.properties"/> 
     <property environment="env"/>
-    <property name="ECLIPSE_HOME" value="../../../../usr/lib/eclipse"/>
     <property name="debuglevel" value="source,lines,vars"/>
     <property name="target" value="1.7"/>
     <property name="source" value="1.7"/>
@@ -43,31 +39,17 @@
             <classpath refid="hospitalDeSrc.classpath"/>
         </javac>
     </target>
-    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
-    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
-        <copy todir="${ant.library.dir}">
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </copy>
-    	<unzip dest="${ant.library.dir}">
-            <patternset includes="jdtCompilerAdapter.jar"/>
-            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
-        </unzip>
-    </target>
-    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
-        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
-        <antcall target="build"/>
-    </target>
     <target name="GuiHospital">
         <java classname="main.java.com.pablo.simhospital.gui.GuiHospital" failonerror="true" fork="yes">
             <classpath refid="hospitalDeSrc.classpath"/>
         </java>
     </target>
 	 <target name="jar" >
-	    <jar destfile="/home/minino/Escritorio/hospital.jar">
+	    <jar destfile="${DESTINO_JAR}">
 	        <manifest>
 	        	<attribute name="Main-Class" value="org.eclipse.jdt.internal.jarinjarloader.JarRsrcLoader"/>
 	        	<attribute name="Rsrc-Main-Class" value="main.java.com.pablo.simhospital.gui.GuiHospital"/>
-	            <attribute name="Class-Path" value="."/>
+	            <attribute name="Class-Path" value="bin"/>
 	            <attribute name="Rsrc-Class-Path" value="./ junit4-4.11.jar hamcrest-all-1.3.jar jlayer-1.0.1.jar log4j-1.2.17.jar tools.jar "/>
 	        </manifest>
 	    	<fileset dir="bin">

@@ -48,6 +48,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	private Simulacion sim;
 	// private CounterTask task;
 	private Task task1;
+	
 	private int cantidadDoc;
 	private int hsInicial;
 	private int minInicial;
