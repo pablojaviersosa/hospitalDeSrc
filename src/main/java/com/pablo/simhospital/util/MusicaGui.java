@@ -8,7 +8,7 @@ import javazoom.jl.player.Player;
 public class MusicaGui implements Runnable {
 	static String nombreRecursoMusica;
 	static String pathRecursoMusica;
-	private Player musica;
+	public Player musica;
 	private InputStream input;
 	public MusicaGui() {
 	
