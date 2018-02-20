@@ -1,31 +1,26 @@
 package main.java.com.pablo.simhospital.configuracion;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.util.Properties;
-
 import javax.swing.Icon;
 import javax.swing.ImageIcon;
 
-import main.java.com.pablo.simhospital.gui.GuiHospital;
 import main.java.com.pablo.simhospital.gui.SimulacionGui;
 
 public class IconosGui {
 
+	static String pathRecursoIconos;
 	/* Nombres de los Iconos */
-	private String iconLogStr = "btn_Log.png";
-	private String iconPLayStr = "btn_Play.png";
-	private String iconBackStr = "btn_Back.png";
-	private String iconEsadisticaStr = "btn_Estadistica.png";
-	private String iconStopStr = "btn_Stop.png";
-	private String iconPacienteStr = "ic_paciente.png";
-	private String iconPacienteFilaStr = "ic_paciente_fila.png";
-	private String iconPacienteFilaVacioStr = "ic_paciente_fila_vacio.png";
-	private String iconDocStr = "ic_doc.png";
-	private String iconMuertosStr = "ic_muertos.png";
-	private String iconBoxOcupadoStr = "boxOcupado.png";
-	private String iconBoxLibreStr = "boxLibre.png";
+	static String iconLogStr;
+	static String iconPLayStr;
+	static String iconBackStr;
+	static String iconEsadisticaStr;
+	static String iconStopStr;
+	static String iconPacienteStr;
+	static String iconPacienteFilaStr;
+	static String iconPacienteFilaVacioStr;
+	static String iconDocStr;
+	static String iconMuertosStr;
+	static String iconBoxOcupadoStr;
+	static String iconBoxLibreStr;
 
 	/**
 	 * Iconos
@@ -45,77 +40,47 @@ public class IconosGui {
 	private Icon iconBoxOcupado;
 	private Icon iconBoxLibre;
 
-	public IconosGui(String ruta_raiz_iconos) {
-		// Carga todos los iconos de la gui
-		Properties prop = new Properties();
-		InputStream input = null;
+	public IconosGui() {
+		load();
+	}
 
-		try {
-			if (ruta_raiz_iconos == null) {
-				ruta_raiz_iconos = " ";
-
-			}
-			ruta_raiz_iconos = new String(ruta_raiz_iconos
-					+ "/main/config/iconos.properties").trim();
-			if (GuiHospital.esJar.equals("SI")) {
-				input = InputStream.class.getResourceAsStream(ruta_raiz_iconos);
-			} else {
-				input = new FileInputStream(ruta_raiz_iconos);
-			}
-			// load a properties file
-			prop.load(input);
-
-			setIconLog(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconLogStr"))));
-			setIconBack(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconBackStr"))));
-			setIconPLay(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconPLayStr"))));
-			setIconEsadistica(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconEsadisticaStr"))));
-			setIconStop(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconStopStr"))));
-			setIconPaciente(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconPacienteStr"))));
-			setIconPacienteFila(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconPacienteFilaStr"))));
-			setIconDoc(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconDocStr"))));
-			setIconMuertos(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconMuertosStr"))));
-			setIconPacienteFilaVacio(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconPacienteFilaVacioStr"))));
-
-			setIconBoxOcupado(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconBoxOcupadoStr"))));
-			setIconBoxLibre(new ImageIcon(
-					SimulacionGui.class.getResource("/main/recursos/iconos/"
-							+ prop.getProperty("iconBoxLibreStr"))));
-		} catch (IOException ex) {
-			ex.printStackTrace();
-		} catch (Throwable e) {
-			System.err.println(e);
-		} finally {
-			if (input != null) {
-				try {
-					input.close();
-				} catch (IOException e) {
-					e.printStackTrace();
-				}
-			}
-		}
-
+	private void load() {
+		setIconLog(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconLogStr())));
+		setIconBack(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconBackStr())));
+		setIconPLay(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconPLayStr())));
+		setIconEsadistica(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconEsadisticaStr())));
+		setIconStop(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconStopStr())));
+		setIconPaciente(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconPacienteStr())));
+		setIconPacienteFila(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconPacienteFilaStr())));
+		setIconDoc(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconDocStr())));
+		setIconMuertos(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconMuertosStr())));
+		setIconPacienteFilaVacio(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconPacienteFilaVacioStr())));
+		setIconBoxOcupado(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconBoxOcupadoStr())));
+		setIconBoxLibre(new ImageIcon(
+				SimulacionGui.class.getResource(getPathRecursoIconos()
+						+ getIconBoxLibreStr())));
 	}
 
 	public String getIconLogStr() {
@@ -308,5 +273,13 @@ public class IconosGui {
 
 	public void setIconBoxLibre(Icon iconBoxLibre) {
 		this.iconBoxLibre = iconBoxLibre;
+	}
+
+	public static String getPathRecursoIconos() {
+		return pathRecursoIconos;
+	}
+
+	public static void setPathRecursoIconos(String pathRecursoIconos) {
+		IconosGui.pathRecursoIconos = pathRecursoIconos;
 	}
 }

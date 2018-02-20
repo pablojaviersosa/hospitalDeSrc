@@ -11,6 +11,7 @@ import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 
 public class EstadisticaGui {
 
@@ -49,7 +50,6 @@ public class EstadisticaGui {
 	private JButton btn_Back;
 
 	public EstadisticaGui(Configuracion config) {
-		// TODO Auto-generated constructor stub
 		/* Estadisticas */
 		estadisticaPopUp = new JPanel();
 		estadisticaPopUp.setBounds(100, 50, 600, 440);
@@ -57,14 +57,12 @@ public class EstadisticaGui {
 		estadisticaPopUp.setBackground(new Color(232, 232, 232));
 		estadisticaPopUp.setLayout(null);
 		estadisticaPopUp.setVisible(false);
-		// TODO Agregar EstadisticaPopUp al Jframe
-		// frmHospital.getContentPane().add(estadisticaPopUp);
-
+		
 		txt_EstadTituloEstadistica = new JTextPane();
-		txt_EstadTituloEstadistica.setText(config.getIdioma()
+		txt_EstadTituloEstadistica.setText(IdiomaGui
 				.getTituloEstadisticaMsj());
 		txt_EstadTituloEstadistica
-				.setFont(config.getFuentes().getInderBold30());
+				.setFont(config.getFuentes().getFontInderBold30());
 		txt_EstadTituloEstadistica.setForeground(Color.BLACK);
 		txt_EstadTituloEstadistica.setEditable(false);
 		txt_EstadTituloEstadistica.setBackground(null);
@@ -85,11 +83,11 @@ public class EstadisticaGui {
 		contendorEstadisticaHora.add(contenedorEstadHsInicio);
 
 		txt_EstadHoraInicio = new JTextPane();
-		txt_EstadHoraInicio.setText(config.getIdioma().getHoraDeInicoMsj());
+		txt_EstadHoraInicio.setText(IdiomaGui.getHoraDeInicioMsj());
 		txt_EstadHoraInicio.setForeground(Color.BLACK);
 		txt_EstadHoraInicio.setBackground(null);
 		txt_EstadHoraInicio.setEditable(false);
-		txt_EstadHoraInicio.setFont(config.getFuentes().getInderBold15());
+		txt_EstadHoraInicio.setFont(config.getFuentes().getFontInderBold15());
 		txt_EstadHoraInicio.setBounds(0, 0, 140, 25);
 		contenedorEstadHsInicio.add(txt_EstadHoraInicio);
 
@@ -100,7 +98,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadHoraInicio.setBackground(null);
 		txt_Resultado_EstadHoraInicio.setEditable(false);
 		txt_Resultado_EstadHoraInicio.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		contenedorEstadHsInicio.add(txt_Resultado_EstadHoraInicio);
 
 		/* Hs fin */
@@ -115,7 +113,7 @@ public class EstadisticaGui {
 		txt_EstadHoraFin.setForeground(Color.BLACK);
 		txt_EstadHoraFin.setBackground(null);
 		txt_EstadHoraFin.setEditable(false);
-		txt_EstadHoraFin.setFont(config.getFuentes().getInderBold15());
+		txt_EstadHoraFin.setFont(config.getFuentes().getFontInderBold15());
 		txt_EstadHoraFin.setBounds(0, 0, 140, 25);
 		contenedorEstadHsFin.add(txt_EstadHoraFin);
 
@@ -126,7 +124,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadHoraFin.setBackground(null);
 		txt_Resultado_EstadHoraFin.setEditable(false);
 		txt_Resultado_EstadHoraFin
-				.setFont(config.getFuentes().getInderBold15());
+				.setFont(config.getFuentes().getFontInderBold15());
 		contenedorEstadHsFin.add(txt_Resultado_EstadHoraFin);
 
 		/* Hs actual */
@@ -141,7 +139,7 @@ public class EstadisticaGui {
 		txt_EstadHoraActual.setForeground(Color.BLACK);
 		txt_EstadHoraActual.setBackground(null);
 		txt_EstadHoraActual.setEditable(false);
-		txt_EstadHoraActual.setFont(config.getFuentes().getInderBold15());
+		txt_EstadHoraActual.setFont(config.getFuentes().getFontInderBold15());
 		txt_EstadHoraActual.setBounds(0, 0, 140, 25);
 		contenedorEstadHsActual.add(txt_EstadHoraActual);
 
@@ -152,7 +150,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadHoraActual.setBackground(null);
 		txt_Resultado_EstadHoraActual.setEditable(false);
 		txt_Resultado_EstadHoraActual.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		contenedorEstadHsActual.add(txt_Resultado_EstadHoraActual);
 
 		ContendorEstadisticaCantidadDoc = new JPanel();
@@ -168,7 +166,7 @@ public class EstadisticaGui {
 		txt_Estad_CantidadDoc.setForeground(Color.BLACK);
 		txt_Estad_CantidadDoc.setBackground(null);
 		txt_Estad_CantidadDoc.setEditable(false);
-		txt_Estad_CantidadDoc.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_CantidadDoc.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticaCantidadDoc.add(txt_Estad_CantidadDoc);
 
 		txt_Resultado_EstadCantidadDoc = new JTextPane();
@@ -177,7 +175,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadCantidadDoc.setBackground(null);
 		txt_Resultado_EstadCantidadDoc.setEditable(false);
 		txt_Resultado_EstadCantidadDoc.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticaCantidadDoc.add(txt_Resultado_EstadCantidadDoc);
 
 		ContendorEstadisticasPacientesTotales = new JPanel();
@@ -193,7 +191,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesTotales.setBackground(null);
 		txt_Estad_PacientesTotales.setEditable(false);
 		txt_Estad_PacientesTotales
-				.setFont(config.getFuentes().getInderBold15());
+				.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesTotales.add(txt_Estad_PacientesTotales);
 
 		txt_Resultado_EstadPacientesTotales = new JTextPane();
@@ -202,7 +200,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesTotales.setBackground(null);
 		txt_Resultado_EstadPacientesTotales.setEditable(false);
 		txt_Resultado_EstadPacientesTotales.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesTotales
 				.add(txt_Resultado_EstadPacientesTotales);
 
@@ -218,7 +216,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesAlta.setForeground(Color.BLACK);
 		txt_Estad_PacientesAlta.setBackground(null);
 		txt_Estad_PacientesAlta.setEditable(false);
-		txt_Estad_PacientesAlta.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_PacientesAlta.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesAlta.add(txt_Estad_PacientesAlta);
 
 		txt_Resultado_EstadPacientesAlta = new JTextPane();
@@ -227,7 +225,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesAlta.setBackground(null);
 		txt_Resultado_EstadPacientesAlta.setEditable(false);
 		txt_Resultado_EstadPacientesAlta.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesAlta
 				.add(txt_Resultado_EstadPacientesAlta);
 
@@ -243,7 +241,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesMedia.setForeground(Color.BLACK);
 		txt_Estad_PacientesMedia.setBackground(null);
 		txt_Estad_PacientesMedia.setEditable(false);
-		txt_Estad_PacientesMedia.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_PacientesMedia.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesMedia.add(txt_Estad_PacientesMedia);
 
 		txt_Resultado_EstadPacientesMedia = new JTextPane();
@@ -252,7 +250,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesMedia.setBackground(null);
 		txt_Resultado_EstadPacientesMedia.setEditable(false);
 		txt_Resultado_EstadPacientesMedia.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesMedia
 				.add(txt_Resultado_EstadPacientesMedia);
 
@@ -268,7 +266,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesBaja.setForeground(Color.BLACK);
 		txt_Estad_PacientesBaja.setBackground(null);
 		txt_Estad_PacientesBaja.setEditable(false);
-		txt_Estad_PacientesBaja.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_PacientesBaja.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesBaja.add(txt_Estad_PacientesBaja);
 
 		txt_Resultado_EstadPacientesBaja = new JTextPane();
@@ -277,7 +275,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesBaja.setBackground(null);
 		txt_Resultado_EstadPacientesBaja.setEditable(false);
 		txt_Resultado_EstadPacientesBaja.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesBaja
 				.add(txt_Resultado_EstadPacientesBaja);
 
@@ -294,7 +292,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesMuertos.setBackground(null);
 		txt_Estad_PacientesMuertos.setEditable(false);
 		txt_Estad_PacientesMuertos
-				.setFont(config.getFuentes().getInderBold15());
+				.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesMuertos.add(txt_Estad_PacientesMuertos);
 
 		txt_Resultado_EstadPacientesMuertos = new JTextPane();
@@ -303,7 +301,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesMuertos.setBackground(null);
 		txt_Resultado_EstadPacientesMuertos.setEditable(false);
 		txt_Resultado_EstadPacientesMuertos.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesMuertos
 				.add(txt_Resultado_EstadPacientesMuertos);
 
@@ -319,7 +317,7 @@ public class EstadisticaGui {
 		txt_Estad_PacientesFila.setForeground(Color.BLACK);
 		txt_Estad_PacientesFila.setBackground(null);
 		txt_Estad_PacientesFila.setEditable(false);
-		txt_Estad_PacientesFila.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_PacientesFila.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasPacientesFila.add(txt_Estad_PacientesFila);
 
 		txt_Resultado_EstadPacientesFila = new JTextPane();
@@ -328,7 +326,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadPacientesFila.setBackground(null);
 		txt_Resultado_EstadPacientesFila.setEditable(false);
 		txt_Resultado_EstadPacientesFila.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasPacientesFila
 				.add(txt_Resultado_EstadPacientesFila);
 
@@ -344,7 +342,7 @@ public class EstadisticaGui {
 		txt_Estad_EsperaPromedio.setForeground(Color.BLACK);
 		txt_Estad_EsperaPromedio.setBackground(null);
 		txt_Estad_EsperaPromedio.setEditable(false);
-		txt_Estad_EsperaPromedio.setFont(config.getFuentes().getInderBold15());
+		txt_Estad_EsperaPromedio.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasEsperaPromedio.add(txt_Estad_EsperaPromedio);
 
 		txt_Resultado_EstadEsperaPromedio = new JTextPane();
@@ -353,7 +351,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadEsperaPromedio.setBackground(null);
 		txt_Resultado_EstadEsperaPromedio.setEditable(false);
 		txt_Resultado_EstadEsperaPromedio.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasEsperaPromedio
 				.add(txt_Resultado_EstadEsperaPromedio);
 
@@ -370,7 +368,7 @@ public class EstadisticaGui {
 		txt_Estad_AtencionPromedio.setBackground(null);
 		txt_Estad_AtencionPromedio.setEditable(false);
 		txt_Estad_AtencionPromedio
-				.setFont(config.getFuentes().getInderBold15());
+				.setFont(config.getFuentes().getFontInderBold15());
 		ContendorEstadisticasAtencionPromedio.add(txt_Estad_AtencionPromedio);
 
 		txt_Resultado_EstadAtencionPromedio = new JTextPane();
@@ -379,7 +377,7 @@ public class EstadisticaGui {
 		txt_Resultado_EstadAtencionPromedio.setBackground(null);
 		txt_Resultado_EstadAtencionPromedio.setEditable(false);
 		txt_Resultado_EstadAtencionPromedio.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasAtencionPromedio
 				.add(txt_Resultado_EstadAtencionPromedio);
 
@@ -396,7 +394,7 @@ public class EstadisticaGui {
 		txt_Estad_TiempoEsperaTotal.setBackground(null);
 		txt_Estad_TiempoEsperaTotal.setEditable(false);
 		txt_Estad_TiempoEsperaTotal.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasTiempoEsperaTotal.add(txt_Estad_TiempoEsperaTotal);
 
 		txt_Resultado_EstadTiempoEsperaTotal = new JTextPane();
@@ -405,14 +403,14 @@ public class EstadisticaGui {
 		txt_Resultado_EstadTiempoEsperaTotal.setBackground(null);
 		txt_Resultado_EstadTiempoEsperaTotal.setEditable(false);
 		txt_Resultado_EstadTiempoEsperaTotal.setFont(config.getFuentes()
-				.getInderBold15());
+				.getFontInderBold15());
 		ContendorEstadisticasTiempoEsperaTotal
 				.add(txt_Resultado_EstadTiempoEsperaTotal);
 
 		/* Boton */
 		btn_Back = new JButton();
 		btn_Back.setIcon(config.getIconos().getIconBack());
-		btn_Back.setToolTipText(config.getIdioma().getBtnBackAyudaMsj());
+		btn_Back.setToolTipText(IdiomaGui.getBtnBackAyudaMsj());
 		btn_Back.setBackground(null);
 		btn_Back.setBorderPainted(false);
 		btn_Back.setFocusPainted(false);
@@ -420,17 +418,6 @@ public class EstadisticaGui {
 		btn_Back.setFocusable(false);
 		btn_Back.setBorder(null);
 		btn_Back.setBounds(520, 370, 60, 55);
-		// TODO Pasar control a clase principal
-		// btn_Back.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// if (estado == estadoApp.ESTADISTICA) {
-		// estadisticaPopUp.setVisible(false);
-		// estado = estadoApp.CORRIENDO;
-		//
-		// }
-		// }
-		// });
 		estadisticaPopUp.add(btn_Back);
 		/**********************************************************************/
 		/* Fin Estadisticas */

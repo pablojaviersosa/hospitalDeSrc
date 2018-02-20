@@ -2,12 +2,8 @@ package main.java.com.pablo.simhospital.gui;
 
 import java.awt.Color;
 import java.awt.Dimension;
-// TODO pasar el control al controlador de GuiHospital 
-//import java.awt.event.MouseAdapter;
-//import java.awt.event.MouseEvent;
-//import main.java.com.pablo.simhospital.util.Archivo;
-//import javax.swing.JOptionPane;
 
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.JSlider;
@@ -20,7 +16,8 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
-import javax.swing.ImageIcon;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
+import main.java.com.pablo.simhospital.configuracion.ValoresPorDefectoGui;
 
 public class ConfiguracionGui {
 	/* ConfigGui */
@@ -50,15 +47,12 @@ public class ConfiguracionGui {
 		configuracionPopUp.setBorder(new LineBorder(new Color(0, 0, 0), 5));
 		configuracionPopUp.setBackground(new Color(232, 232, 232));
 		configuracionPopUp.setLayout(null);
-		// TODO agregar el Jpanel de configuracioPopUp al Jframe ---listo
-		// frmHospital.getContentPane().add(configuracionPopUp);
-
+		
 		txt_TituloConfig = new JTextPane();
 		txt_TituloConfig.setForeground(Color.BLACK);
 		txt_TituloConfig.setEditable(false);
-		txt_TituloConfig
-				.setText(config.getIdioma().getTituloConfiguracionMsj());
-		txt_TituloConfig.setFont(config.getFuentes().getInderBold30());
+		txt_TituloConfig.setText(IdiomaGui.getTituloConfiguracionMsj());
+		txt_TituloConfig.setFont(config.getFuentes().getFontInderBold30());
 		txt_TituloConfig.setBackground(null);
 		txt_TituloConfig.setBounds(90, 20, 225, 45);
 		configuracionPopUp.add(txt_TituloConfig);
@@ -73,23 +67,20 @@ public class ConfiguracionGui {
 
 		txt_ConfCantidadDoc = new JTextPane();
 		txt_ConfCantidadDoc.setBounds(0, 0, 360, 35);
-		txt_ConfCantidadDoc.setText(config.getIdioma()
-				.getCantidadDeDoctoresMsj());
+		txt_ConfCantidadDoc.setText(IdiomaGui.getCantidadDeDoctoresMsj());
 		txt_ConfCantidadDoc.setForeground(Color.BLACK);
 		txt_ConfCantidadDoc.setBackground(null);
 		txt_ConfCantidadDoc.setEditable(false);
-		txt_ConfCantidadDoc.setFont(config.getFuentes().getInderBold20());
+		txt_ConfCantidadDoc.setFont(config.getFuentes().getFontInderBold20());
 		contenedorConfTxtCantDoc.add(txt_ConfCantidadDoc);
 
 		selectorConfCantidadDoc = new JSpinner();
 		selectorConfCantidadDoc.setBackground(null);
 		selectorConfCantidadDoc.setBounds(360, 0, 50, 35);
-		selectorConfCantidadDoc.setModel(new SpinnerNumberModel(config
-				.getValoresDef().getDocDefault(), config.getValoresDef()
-				.getDocMin(), config.getValoresDef().getDocMax(), 1));
+		selectorConfCantidadDoc.setModel(new SpinnerNumberModel(ValoresPorDefectoGui.getDocDefault(), ValoresPorDefectoGui.getDocMin(), ValoresPorDefectoGui.getDocMax(), 1));
 		selectorConfCantidadDoc.setMinimumSize(new Dimension(30, 20));
 		selectorConfCantidadDoc.setPreferredSize(new Dimension(30, 20));
-		selectorConfCantidadDoc.setFont(config.getFuentes().getInderBold20());
+		selectorConfCantidadDoc.setFont(config.getFuentes().getFontInderBold20());
 		contenedorConfTxtCantDoc.add(selectorConfCantidadDoc);
 
 		/* Hs inicio */
@@ -100,18 +91,18 @@ public class ConfiguracionGui {
 		contenedorConfTxtHsInicio.setLayout(null);
 
 		txt_ConfHoraInicio = new JTextPane();
-		txt_ConfHoraInicio.setText(config.getIdioma().getHoraDeInicoMsj());
+		txt_ConfHoraInicio.setText(IdiomaGui.getHoraDeInicioMsj());
 		txt_ConfHoraInicio.setForeground(Color.BLACK);
 		txt_ConfHoraInicio.setBackground(null);
 		txt_ConfHoraInicio.setEditable(false);
-		txt_ConfHoraInicio.setFont(config.getFuentes().getInderBold20());
+		txt_ConfHoraInicio.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfHoraInicio.setBounds(0, 0, 160, 35);
 		contenedorConfTxtHsInicio.add(txt_ConfHoraInicio);
 
 		txt_Conf_HsInicio = new JTextField();
 		txt_Conf_HsInicio.setText("06");
 		txt_Conf_HsInicio.setForeground(Color.BLACK);
-		txt_Conf_HsInicio.setFont(config.getFuentes().getInderBold20());
+		txt_Conf_HsInicio.setFont(config.getFuentes().getFontInderBold20());
 		txt_Conf_HsInicio.setBounds(165, 0, 35, 35);
 		contenedorConfTxtHsInicio.add(txt_Conf_HsInicio);
 
@@ -120,14 +111,14 @@ public class ConfiguracionGui {
 		txt_ConfHsInicio_puntos.setEditable(false);
 		txt_ConfHsInicio_puntos.setBackground(null);
 		txt_ConfHsInicio_puntos.setForeground(Color.BLACK);
-		txt_ConfHsInicio_puntos.setFont(config.getFuentes().getInderBold20());
+		txt_ConfHsInicio_puntos.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfHsInicio_puntos.setBounds(200, 0, 15, 35);
 		contenedorConfTxtHsInicio.add(txt_ConfHsInicio_puntos);
 
 		txt_Conf_MinInicio = new JTextField();
 		txt_Conf_MinInicio.setText("00");
 		txt_Conf_MinInicio.setForeground(Color.BLACK);
-		txt_Conf_MinInicio.setFont(config.getFuentes().getInderBold20());
+		txt_Conf_MinInicio.setFont(config.getFuentes().getFontInderBold20());
 		txt_Conf_MinInicio.setBounds(215, 0, 35, 35);
 		contenedorConfTxtHsInicio.add(txt_Conf_MinInicio);
 
@@ -143,14 +134,14 @@ public class ConfiguracionGui {
 		txt_ConfHoraFin.setForeground(Color.BLACK);
 		txt_ConfHoraFin.setBackground(null);
 		txt_ConfHoraFin.setEditable(false);
-		txt_ConfHoraFin.setFont(config.getFuentes().getInderBold20());
+		txt_ConfHoraFin.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfHoraFin.setBounds(0, 0, 160, 35);
 		contenedorConfTxtHsFin.add(txt_ConfHoraFin);
 
 		txt_Conf_HsFin = new JTextField();
 		txt_Conf_HsFin.setText("18");
 		txt_Conf_HsFin.setForeground(Color.BLACK);
-		txt_Conf_HsFin.setFont(config.getFuentes().getInderBold20());
+		txt_Conf_HsFin.setFont(config.getFuentes().getFontInderBold20());
 		txt_Conf_HsFin.setBounds(165, 0, 35, 35);
 		contenedorConfTxtHsFin.add(txt_Conf_HsFin);
 
@@ -159,14 +150,14 @@ public class ConfiguracionGui {
 		txt_ConfHsFin_puntos.setEditable(false);
 		txt_ConfHsFin_puntos.setBackground(null);
 		txt_ConfHsFin_puntos.setForeground(Color.BLACK);
-		txt_ConfHsFin_puntos.setFont(config.getFuentes().getInderBold20());
+		txt_ConfHsFin_puntos.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfHsFin_puntos.setBounds(200, 0, 15, 35);
 		contenedorConfTxtHsFin.add(txt_ConfHsFin_puntos);
 
 		txt_Conf_MinFin = new JTextField();
 		txt_Conf_MinFin.setText("00");
 		txt_Conf_MinFin.setForeground(Color.BLACK);
-		txt_Conf_MinFin.setFont(config.getFuentes().getInderBold20());
+		txt_Conf_MinFin.setFont(config.getFuentes().getFontInderBold20());
 		txt_Conf_MinFin.setBounds(215, 0, 35, 35);
 		contenedorConfTxtHsFin.add(txt_Conf_MinFin);
 
@@ -179,22 +170,22 @@ public class ConfiguracionGui {
 
 		txt_ConfPorcentajeMin = new JTextPane();
 		txt_ConfPorcentajeMin.setEditable(false);
-		txt_ConfPorcentajeMin.setText(config.getIdioma()
-				.getPorcentajePacientesPorMinutoMsj());
+		txt_ConfPorcentajeMin.setText(IdiomaGui
+				.getPorcentajaPacientesMinMsj());
 		txt_ConfPorcentajeMin.setForeground(Color.BLACK);
-		txt_ConfPorcentajeMin.setFont(config.getFuentes().getInderBold20());
+		txt_ConfPorcentajeMin.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfPorcentajeMin.setBackground(null);
 		txt_ConfPorcentajeMin.setBounds(0, 0, 400, 35);
 		contenedorConfPorcentajeMinuto.add(txt_ConfPorcentajeMin);
 
 		txt_ConfResultadoPorcentajeMin = new JTextPane();
-		txt_ConfResultadoPorcentajeMin.setText(config.getValoresDef()
+		txt_ConfResultadoPorcentajeMin.setText(ValoresPorDefectoGui
 				.getPorcentajePacientesPorMinutoStr());
 		txt_ConfResultadoPorcentajeMin.setEditable(false);
 		txt_ConfResultadoPorcentajeMin.setBackground(null);
 		txt_ConfResultadoPorcentajeMin.setForeground(Color.BLACK);
 		txt_ConfResultadoPorcentajeMin.setFont(config.getFuentes()
-				.getInderBold20());
+				.getFontInderBold20());
 		txt_ConfResultadoPorcentajeMin.setBounds(410, 0, 45, 35);
 		contenedorConfPorcentajeMinuto.add(txt_ConfResultadoPorcentajeMin);
 
@@ -221,21 +212,21 @@ public class ConfiguracionGui {
 
 		txt_ConfVelocidad = new JTextPane();
 		txt_ConfVelocidad.setEditable(false);
-		txt_ConfVelocidad.setText(config.getIdioma().getVelocidadMsj());
+		txt_ConfVelocidad.setText(IdiomaGui.getVelocidadMsj());
 		txt_ConfVelocidad.setForeground(Color.BLACK);
-		txt_ConfVelocidad.setFont(config.getFuentes().getInderBold20());
+		txt_ConfVelocidad.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfVelocidad.setBackground(null);
 		txt_ConfVelocidad.setBounds(0, 0, 120, 35);
 		contenedorConfVelocidad.add(txt_ConfVelocidad);
 
 		txt_ConfResultadoVelocidad = new JTextPane();
-		txt_ConfResultadoVelocidad.setText(config.getValoresDef()
+		txt_ConfResultadoVelocidad.setText(ValoresPorDefectoGui
 				.getVelocidadPorDefectoStr());
 		txt_ConfResultadoVelocidad.setEditable(false);
 		txt_ConfResultadoVelocidad.setBackground(null);
 		txt_ConfResultadoVelocidad.setForeground(Color.BLACK);
 		txt_ConfResultadoVelocidad
-				.setFont(config.getFuentes().getInderBold20());
+				.setFont(config.getFuentes().getFontInderBold20());
 		txt_ConfResultadoVelocidad.setBounds(120, 0, 45, 35);
 		contenedorConfVelocidad.add(txt_ConfResultadoVelocidad);
 
@@ -257,7 +248,7 @@ public class ConfiguracionGui {
 		btnLog = new JButton();
 		btnLog.setIcon(new ImageIcon(ConfiguracionGui.class
 				.getResource("/main/recursos/iconos/btn_Log.png")));
-		btnLog.setToolTipText(config.getIdioma().getBtnLogAyudaMsj());
+		btnLog.setToolTipText(IdiomaGui.getBtnLogAyudaMsj());
 		btnLog.setBackground(null);
 		btnLog.setBorderPainted(false);
 		btnLog.setFocusPainted(false);
@@ -265,27 +256,11 @@ public class ConfiguracionGui {
 		btnLog.setFocusable(false);
 		btnLog.setBorder(null);
 		btnLog.setBounds(520, 315, 60, 55);
-		// TODO Boton de log ----listo
-		// btnLog.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// if (mainGui.getEstadoApp() == estadoApp.CONFIGURACION) {
-		// configuracionPopUp.setVisible(false);
-		// log.getLogPopUp().setVisible(true);
-		// mainGui.setEstadoApp(estadoApp.LOG);
-		//
-		// String txtlog = new Archivo().leerArchivo("log/simulacion.log");
-		// logGui.getTxt_resultadoScrollLog().setText(txtlog);
-		// }
-		// }
-		// });
 		configuracionPopUp.add(btnLog);
 
 		btnPlay = new JButton();
-		// btnPlay.setIcon(new
-		// ImageIcon(ConfiguracionGui.class.getResource("/main/recursos/iconos/btn_Play.png")));
 		btnPlay.setIcon(config.getIconos().getIconPLay());
-		btnPlay.setToolTipText(config.getIdioma().getBtnPlayAyudaMsj());
+		btnPlay.setToolTipText(IdiomaGui.getBtnPlayAyudaMsj());
 		btnPlay.setBackground(null);
 		btnPlay.setBorderPainted(false);
 		btnPlay.setFocusPainted(false);
@@ -293,50 +268,6 @@ public class ConfiguracionGui {
 		btnPlay.setFocusable(false);
 		btnPlay.setBorder(null);
 		btnPlay.setBounds(520, 370, 60, 55);
-		// TODO Configuracion Play ----listo
-		// btnPlay.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// boolean valido = true;
-		// int hsMin = 60 * Integer.parseInt(txt_Conf_HsInicio.getText()) +
-		// Integer.parseInt(txt_Conf_MinInicio.getText());
-		// int hsMax = 60 * Integer.parseInt(txt_Conf_HsFin.getText()) +
-		// Integer.parseInt(txt_Conf_MinFin.getText());
-		//
-		// cantidadDoc = (int) selectorConfCantidadDoc.getValue();
-		// hsInicial = Integer.parseInt(txt_Conf_HsInicio.getText());
-		// minInicial = Integer.parseInt(txt_Conf_MinInicio.getText());
-		// hsFinal = Integer.parseInt(txt_Conf_HsFin.getText());
-		// minFinal = Integer.parseInt(txt_Conf_MinFin.getText());
-		// porcentajeMin =
-		// Double.parseDouble(txt_ConfResultadoPorcentajeMin.getText()) / 100;
-		//
-		// if (estado == estadoApp.CONFIGURACION) {
-		// //24:00 -> 1440
-		// //1439 -> 1439
-		// //valido de 0 a 23:59
-		// if (0 > hsMin || hsMin > 1439 || 0 > hsMax || hsMax > 1439)//valido
-		// una hora valida
-		// valido = false;
-		// if (hsMin > hsMax)
-		// valido = false;
-		//
-		// if (valido) {
-		// task1.doTask();//este llama a la simulacion
-		// configuracionPopUp.setVisible(false);
-		// menu.setVisible(true);
-		// sala.setVisible(true);
-		// actualizarInfoEstatica(cantidadDoc, hsMin, hsMax);//acomoda lo del
-		// panel
-		// actualizarInfoDinamica();
-		// estado = estadoApp.CORRIENDO;
-		// } else {
-		// //cartel o focus en los errores
-		// JOptionPane.showMessageDialog(null, "Error en la configuración");
-		// }
-		// }
-		// }
-		// });
 		configuracionPopUp.add(btnPlay);
 		/* Fin configuracion */
 	}

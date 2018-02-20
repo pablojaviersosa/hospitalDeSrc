@@ -13,6 +13,7 @@ import javax.swing.ScrollPaneConstants;
 import javax.swing.border.LineBorder;
 
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 
 public class LogGui {
 	/* Log */
@@ -30,14 +31,12 @@ public class LogGui {
 		logPopUp.setBorder(new LineBorder(new Color(0, 0, 0), 5));
 		logPopUp.setBackground(new Color(232, 232, 232));
 		logPopUp.setLayout(null);
-		// TODO Agregar el logPopUP al Jframe ----------------------Hecho
-		// frmHospital.getContentPane().add(logPopUp);
 
 		txt_TituloLog = new JTextPane();
 		txt_TituloLog.setForeground(Color.BLACK);
 		txt_TituloLog.setEditable(false);
-		txt_TituloLog.setText(config.getIdioma().getTituloLogMsj());
-		txt_TituloLog.setFont(config.getFuentes().getInderBold30());
+		txt_TituloLog.setText(IdiomaGui.getTituloLogMsj());
+		txt_TituloLog.setFont(config.getFuentes().getFontInderBold30());
 		txt_TituloLog.setBackground(null);
 		txt_TituloLog.setBounds(90, 20, 225, 45);
 		logPopUp.add(txt_TituloLog);
@@ -52,13 +51,14 @@ public class LogGui {
 		txt_resultadoScrollLog.setEditable(false);
 		txt_resultadoScrollLog.setBackground(null);
 		txt_resultadoScrollLog.setDisabledTextColor(Color.BLACK);
-		txt_resultadoScrollLog.setFont(config.getFuentes().getInderBold10());
+		txt_resultadoScrollLog
+				.setFont(config.getFuentes().getFontInderBold10());
 		contenedorScroll_Log.setViewportView(txt_resultadoScrollLog);
 
 		/* Boton back */
 		btn_BackLog = new JButton();
 		btn_BackLog.setIcon(config.getIconos().getIconBack());
-		btn_BackLog.setToolTipText(config.getIdioma().getBtnBackAyudaMsj());
+		btn_BackLog.setToolTipText(IdiomaGui.getBtnBackAyudaMsj());
 		btn_BackLog.setBackground(null);
 		btn_BackLog.setBorderPainted(false);
 		btn_BackLog.setFocusPainted(false);
@@ -66,18 +66,6 @@ public class LogGui {
 		btn_BackLog.setFocusable(false);
 		btn_BackLog.setBorder(null);
 		btn_BackLog.setBounds(520, 370, 60, 55);
-		// TODO Pasar al controlador listo!
-		// back del log
-		// btn_BackLog.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// if (mainGui.getEstadoApp() == estadoApp.LOG) {
-		// configGui.getConfiguracionPopUp().setVisible(true);
-		// getLogPopUp().setVisible(false);
-		// mainGui.setEstadoApp(estadoApp.CONFIGURACION);
-		// }
-		// }
-		// });
 		logPopUp.add(btn_BackLog);
 		/* Fin Log */
 	}

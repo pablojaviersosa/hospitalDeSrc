@@ -20,6 +20,8 @@ import javax.swing.JTextPane;
 import javax.swing.border.LineBorder;
 
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
+
 import javax.swing.ImageIcon;
 
 public class SimulacionGui {
@@ -59,13 +61,11 @@ public class SimulacionGui {
 		menu.setBackground(new Color(152, 152, 152));
 		menu.setLayout(null);
 		menu.setVisible(false);
-		// TODO
-		// frmHospital.getContentPane().add(menu);
 
 		txt_Titulo = new JTextPane();
 		txt_Titulo.setEnabled(false);
-		txt_Titulo.setFont(config.getFuentes().getInderBold40());
-		txt_Titulo.setText(config.getIdioma().getTituloHospitalMsj());
+		txt_Titulo.setFont(config.getFuentes().getFontInderBold40());
+		txt_Titulo.setText(IdiomaGui.getTituloHospitalMsj());
 		txt_Titulo.setDisabledTextColor(Color.BLACK);
 		txt_Titulo.setEditable(false);
 		txt_Titulo.setBounds(0, 12, 190, 60);
@@ -87,7 +87,7 @@ public class SimulacionGui {
 
 		txt_puntos_pacientes = new JTextPane();
 		txt_puntos_pacientes.setText(":");
-		txt_puntos_pacientes.setFont(config.getFuentes().getInderBold40());
+		txt_puntos_pacientes.setFont(config.getFuentes().getFontInderBold40());
 		txt_puntos_pacientes.setBounds(65, 0, 18, 62);
 		txt_puntos_pacientes.setDisabledTextColor(Color.BLACK);
 		txt_puntos_pacientes.setEnabled(false);
@@ -101,7 +101,7 @@ public class SimulacionGui {
 		txt_ContPacientes.setDisabledTextColor(Color.BLACK);
 		txt_ContPacientes.setText("0");
 		txt_ContPacientes.setBounds(90, 12, 90, 38);
-		txt_ContPacientes.setFont(config.getFuentes().getInderBold25());
+		txt_ContPacientes.setFont(config.getFuentes().getFontInderBold25());
 		txt_ContPacientes.setBackground(null);
 		contenedorPaciente.add(txt_ContPacientes);
 
@@ -120,7 +120,7 @@ public class SimulacionGui {
 
 		txt_puntos_doctores = new JTextPane();
 		txt_puntos_doctores.setText(":");
-		txt_puntos_doctores.setFont(config.getFuentes().getInderBold40());
+		txt_puntos_doctores.setFont(config.getFuentes().getFontInderBold40());
 		txt_puntos_doctores.setBounds(65, 0, 18, 62);
 		txt_puntos_doctores.setDisabledTextColor(Color.BLACK);
 		txt_puntos_doctores.setEnabled(false);
@@ -134,7 +134,7 @@ public class SimulacionGui {
 		txt_ContDoctores.setDisabledTextColor(Color.BLACK);
 		txt_ContDoctores.setText("0");
 		txt_ContDoctores.setBounds(90, 12, 90, 38);
-		txt_ContDoctores.setFont(config.getFuentes().getInderBold25());
+		txt_ContDoctores.setFont(config.getFuentes().getFontInderBold25());
 		txt_ContDoctores.setBackground(null);
 		contenedorDoc.add(txt_ContDoctores);
 
@@ -146,13 +146,13 @@ public class SimulacionGui {
 		menu.add(contenedorMuertos);
 
 		ic_muertos = new JLabel();
-		ic_muertos.setIcon((ImageIcon) config.getIconos().getIconMuertos());
+		ic_muertos.setIcon(config.getIconos().getIconMuertos());
 		ic_muertos.setBounds(0, 0, 61, 62);
 		contenedorMuertos.add(ic_muertos);
 
 		txt_puntos_muertos = new JTextPane();
 		txt_puntos_muertos.setText(":");
-		txt_puntos_muertos.setFont(config.getFuentes().getInderBold40());
+		txt_puntos_muertos.setFont(config.getFuentes().getFontInderBold40());
 		txt_puntos_muertos.setBounds(65, 0, 18, 62);
 		txt_puntos_muertos.setDisabledTextColor(Color.BLACK);
 		txt_puntos_muertos.setEnabled(false);
@@ -166,7 +166,7 @@ public class SimulacionGui {
 		txt_ContMuertos.setDisabledTextColor(Color.BLACK);
 		txt_ContMuertos.setText("0");
 		txt_ContMuertos.setBounds(90, 12, 90, 38);
-		txt_ContMuertos.setFont(config.getFuentes().getInderBold25());
+		txt_ContMuertos.setFont(config.getFuentes().getFontInderBold25());
 		txt_ContMuertos.setBackground(null);
 		contenedorMuertos.add(txt_ContMuertos);
 
@@ -181,8 +181,8 @@ public class SimulacionGui {
 		txt_BarraTiempo.setEditable(false);
 		txt_BarraTiempo.setEnabled(false);
 		txt_BarraTiempo.setDisabledTextColor(Color.BLACK);
-		txt_BarraTiempo.setText(config.getIdioma().getTiempoMsj());
-		txt_BarraTiempo.setFont(config.getFuentes().getInderBold20());
+		txt_BarraTiempo.setText(IdiomaGui.getTiempoMsj());
+		txt_BarraTiempo.setFont(config.getFuentes().getFontInderBold20());
 		txt_BarraTiempo.setBounds(0, 0, 85, 32);
 		txt_BarraTiempo.setBackground(null);
 		contenedorBarraTiempo.add(txt_BarraTiempo);
@@ -191,8 +191,8 @@ public class SimulacionGui {
 		txt_TiempoHs.setEditable(false);
 		txt_TiempoHs.setEnabled(false);
 		txt_TiempoHs.setDisabledTextColor(Color.BLACK);
-		txt_TiempoHs.setText(config.getIdioma().getHsMsj());
-		txt_TiempoHs.setFont(config.getFuentes().getInderBold15());
+		txt_TiempoHs.setText(IdiomaGui.getHsMsj());
+		txt_TiempoHs.setFont(config.getFuentes().getFontInderBold15());
 		txt_TiempoHs.setBounds(85, 5, 40, 27);
 		txt_TiempoHs.setBackground(null);
 		contenedorBarraTiempo.add(txt_TiempoHs);
@@ -208,7 +208,7 @@ public class SimulacionGui {
 		txt_TiempoMin.setEnabled(false);
 		txt_TiempoMin.setDisabledTextColor(Color.BLACK);
 		txt_TiempoMin.setBounds(0, 67, 40, 17);
-		txt_TiempoMin.setFont(config.getFuentes().getInderBold10());
+		txt_TiempoMin.setFont(config.getFuentes().getFontInderBold10());
 		txt_TiempoMin.setText("16:00");
 		txt_TiempoMin.setBackground(null);
 		contenedorBarraTiempo.add(txt_TiempoMin);
@@ -218,7 +218,7 @@ public class SimulacionGui {
 		txt_TiempoMax.setEnabled(false);
 		txt_TiempoMax.setDisabledTextColor(Color.BLACK);
 		txt_TiempoMax.setBounds(143, 67, 42, 17);
-		txt_TiempoMax.setFont(config.getFuentes().getInderBold10());
+		txt_TiempoMax.setFont(config.getFuentes().getFontInderBold10());
 		txt_TiempoMax.setText("18:00");
 		txt_TiempoMax.setBackground(null);
 		contenedorBarraTiempo.add(txt_TiempoMax);
@@ -234,8 +234,8 @@ public class SimulacionGui {
 		txt_BarraPacientes.setEditable(false);
 		txt_BarraPacientes.setEnabled(false);
 		txt_BarraPacientes.setDisabledTextColor(Color.BLACK);
-		txt_BarraPacientes.setText(config.getIdioma().getPacientesMsj());
-		txt_BarraPacientes.setFont(config.getFuentes().getInderBold20());
+		txt_BarraPacientes.setText(IdiomaGui.getPacientesMsj());
+		txt_BarraPacientes.setFont(config.getFuentes().getFontInderBold20());
 		txt_BarraPacientes.setBounds(0, 0, 110, 32);
 		txt_BarraPacientes.setBackground(null);
 		contenedorBarraPacientes.add(txt_BarraPacientes);
@@ -253,7 +253,7 @@ public class SimulacionGui {
 		txt_PacienteMin.setForeground(Color.BLACK);
 		txt_PacienteMin.setEditable(false);
 		txt_PacienteMin.setBounds(0, 67, 15, 17);
-		txt_PacienteMin.setFont(config.getFuentes().getInderBold10());
+		txt_PacienteMin.setFont(config.getFuentes().getFontInderBold10());
 		txt_PacienteMin.setText("0");
 		txt_PacienteMin.setBackground(null);
 		contenedorBarraPacientes.add(txt_PacienteMin);
@@ -264,7 +264,7 @@ public class SimulacionGui {
 		txt_PacienteMax.setForeground(Color.BLACK);
 		txt_PacienteMax.setEditable(false);
 		txt_PacienteMax.setBounds(160, 67, 28, 17);
-		txt_PacienteMax.setFont(config.getFuentes().getInderBold10());
+		txt_PacienteMax.setFont(config.getFuentes().getFontInderBold10());
 		txt_PacienteMax.setBackground(null);
 		contenedorBarraPacientes.add(txt_PacienteMax);
 
@@ -279,8 +279,8 @@ public class SimulacionGui {
 		txt_BarraTotal.setEditable(false);
 		txt_BarraTotal.setEnabled(false);
 		txt_BarraTotal.setDisabledTextColor(Color.BLACK);
-		txt_BarraTotal.setText(config.getIdioma().getTotalMsj());
-		txt_BarraTotal.setFont(config.getFuentes().getInderBold20());
+		txt_BarraTotal.setText(IdiomaGui.getTotalMsj());
+		txt_BarraTotal.setFont(config.getFuentes().getFontInderBold20());
 		txt_BarraTotal.setBounds(0, 0, 70, 32);
 		txt_BarraTotal.setBackground(null);
 		contenedorBarraTotal.add(txt_BarraTotal);
@@ -291,8 +291,8 @@ public class SimulacionGui {
 		txt_TotalPorcentaje.setEnabled(false);
 		txt_TotalPorcentaje.setDisabledTextColor(Color.BLACK);
 		txt_TotalPorcentaje.setForeground(Color.BLACK);
-		txt_TotalPorcentaje.setText(config.getIdioma().getPorcentajeMsj());
-		txt_TotalPorcentaje.setFont(config.getFuentes().getInderBold15());
+		txt_TotalPorcentaje.setText(IdiomaGui.getPorcentajeMsj());
+		txt_TotalPorcentaje.setFont(config.getFuentes().getFontInderBold15());
 		txt_TotalPorcentaje.setBounds(70, 5, 40, 27);
 		txt_TotalPorcentaje.setBackground(null);
 		contenedorBarraTotal.add(txt_TotalPorcentaje);
@@ -384,7 +384,7 @@ public class SimulacionGui {
 
 		btn_Estadistica = new JButton();
 		btn_Estadistica.setIcon(config.getIconos().getIconEsadistica());
-		btn_Estadistica.setToolTipText(config.getIdioma()
+		btn_Estadistica.setToolTipText(IdiomaGui
 				.getBtnEstadisticaAyudaMsj());
 		btn_Estadistica.setBackground(null);
 		btn_Estadistica.setBorderPainted(false);
@@ -393,44 +393,17 @@ public class SimulacionGui {
 													// al clickear
 		btn_Estadistica.setFocusable(false);
 		btn_Estadistica.setBorder(null);
-		// TODO LISTO
-		// btn_Estadistica.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// if (estado == estadoApp.CORRIENDO) {
-		// estadisticaPopUp.setVisible(true);
-		// estado = estadoApp.ESTADISTICA;
-		// }
-		// }
-		// });
 		contenedorBotones.add(btn_Estadistica);
 
 		btn_Stop = new JButton();
 		btn_Stop.setIcon(config.getIconos().getIconStop());
-		btn_Stop.setToolTipText(config.getIdioma().getBtnStopAyudaMsj());
+		btn_Stop.setToolTipText(IdiomaGui.getBtnStopAyudaMsj());
 		btn_Stop.setBackground(null);
 		btn_Stop.setBorderPainted(false);
 		btn_Stop.setFocusPainted(false);
 		btn_Stop.setContentAreaFilled(false);
 		btn_Stop.setFocusable(false);
 		btn_Stop.setBorder(null);
-		// Stop de simulacion ---------------------------------Listo
-		// btn_Stop.addMouseListener(new MouseAdapter() {
-		// @Override
-		// public void mouseReleased(MouseEvent e) {
-		// if (estado == estadoApp.CORRIENDO) {
-		// try {
-		// sim.stop();
-		// } catch (InterruptedException e1) {
-		// log.fatal("No puedo parar!");
-		// }
-		// estado = estadoApp.CONFIGURACION;
-		// configuracionPopUp.setVisible(true);
-		// menu.setVisible(false);//ojo
-		// sala.setVisible(false);
-		// }
-		// }
-		// });
 		contenedorBotones.add(btn_Stop);
 		/* Fin - Columna Izquierda */
 

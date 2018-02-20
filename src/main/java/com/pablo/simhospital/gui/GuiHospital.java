@@ -1,36 +1,39 @@
 package main.java.com.pablo.simhospital.gui;
 
-import main.java.com.pablo.simhospital.configuracion.Configuracion;
-import main.java.com.pablo.simhospital.hospital.Simulacion;
-
-import java.awt.EventQueue;
 import java.awt.Color;
+import java.awt.EventQueue;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.awt.event.MouseMotionListener;
-import javax.swing.Icon;
-import javax.swing.JFrame;
-import javax.swing.JOptionPane;
-import javax.swing.SwingWorker;
-import javax.swing.JLabel;
-import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
+import javax.swing.Icon;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.SwingWorker;
+
+import main.java.com.pablo.simhospital.configuracion.ConfigGuiPaths;
+import main.java.com.pablo.simhospital.configuracion.Configuracion;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
+import main.java.com.pablo.simhospital.configuracion.ValoresPorDefectoGui;
+import main.java.com.pablo.simhospital.hospital.Simulacion;
 import main.java.com.pablo.simhospital.util.Archivo;
 import main.java.com.pablo.simhospital.util.CorreccionHorario;
-import main.java.com.pablo.simhospital.util.Musica;
+import main.java.com.pablo.simhospital.util.MusicaGui;
 
-// 
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
 public class GuiHospital implements ActionListener, MouseMotionListener {
-	private static Logger log = Logger.getLogger("LoggerGui");
 	private static ExecutorService hiloMusical;
-	public static String esJar = "NO";
+	private static Logger log = Logger.getLogger("LoggerGui");
 	private JFrame frmHospital;
 	// Configuraciones de iconos funetes y mensajes
 	private Configuracion config;
@@ -39,10 +42,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	private ConfiguracionGui configGui;
 	private EstadisticaGui estadisticaGui;
 	private SimulacionGui simulGui;
-	// Rutas
-	static private String pathUrgenciasStr = "/main/config/urgencias.txt";
-	static private String pathLog4jPropertiesStr = "/main/config/log4j.properties";
-	static private String pathMusicaStr = "/main/recursos/musica/musica.mp3";
+
 	private estadoApp estado;
 	// Simulacion back
 	private Simulacion sim;
@@ -60,17 +60,6 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	};
 
 	public static void main(String[] args) {
-		// Musica
-		PropertyConfigurator.configure(InputStream.class
-				.getResourceAsStream(pathLog4jPropertiesStr));
-		hiloMusical = Executors.newCachedThreadPool();
-		try {
-			Musica player = new Musica(pathMusicaStr,esJar);
-			
-			hiloMusical.execute(player);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
 				try {
@@ -88,11 +77,19 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	}
 
 	private void initialize() {
-		if (GuiHospital.esJar.endsWith("SI")) {
-			config = new Configuracion(null, null, null, null);
-		}else {
-			config = new Configuracion(	"src", "src","src", "src");			
+		// carga las propiedades de todos los recursos del sitema y los
+		// instancia
+		config = new Configuracion("src/main/config/common.properties");
+		configurarLogger();
+		//musica
+		hiloMusical = Executors.newCachedThreadPool();
+		try {
+			MusicaGui player = new MusicaGui();
+			hiloMusical.execute(player);
+		} catch (Exception e) {
+			e.printStackTrace();
 		}
+		//pantallas
 		logGui = new LogGui(config);
 		configGui = new ConfiguracionGui(config);
 		estadisticaGui = new EstadisticaGui(config);
@@ -106,10 +103,326 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		frmHospital.getContentPane().setBackground(new Color(177, 177, 177));
 		frmHospital.getContentPane().setLayout(null);
 		frmHospital.setResizable(false);
-		frmHospital.setTitle(config.getIdioma().getTituloHospitalMsj());
+		frmHospital.setTitle(IdiomaGui.getTituloHospitalMsj());
 		frmHospital.setBounds(100, 100, 800, 600);
 		frmHospital.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+		setearListeners();
+	}
+
+	public void setEstadoApp(estadoApp est) {
+		estado = est;
+	}
+
+	public estadoApp getEstadoApp() {
+		return estado;
+	}
+
+	public void actualizarInfoEstatica(int cantidad, int hsMin, int hsMax) {
+		/* SimulacionGui */
+		getSimulGui().getTxt_ContDoctores().setText("" + cantidad);
+		getSimulGui().getTxt_TiempoMin().setText(
+				new CorreccionHorario().arreglarHora(hsInicial) + ":"
+						+ new CorreccionHorario().arreglarHora(minInicial));
+		getSimulGui().getTxt_TiempoMax().setText(
+				new CorreccionHorario().arreglarHora(hsFinal) + ":"
+						+ new CorreccionHorario().arreglarHora(minFinal));
+		getSimulGui().getBarraTiempo().setMinimum(hsMin);
+		getSimulGui().getBarraTiempo().setMaximum(hsMax);
+
+		/* Estadistica */
+		getEstadisticaGui().getTxt_Resultado_EstadHoraInicio().setText(
+				new CorreccionHorario().arreglarHora(hsInicial) + ":"
+						+ new CorreccionHorario().arreglarHora(minInicial));
+		getEstadisticaGui().getTxt_Resultado_EstadHoraFin().setText(
+				new CorreccionHorario().arreglarHora(hsFinal) + ":"
+						+ new CorreccionHorario().arreglarHora(minFinal));
+		getEstadisticaGui().getTxt_Resultado_EstadCantidadDoc().setText(
+				"" + cantidad);
+
+		/* SimulacionGui */
+		dibujarBoxes(cantidad);
+		getSimulGui().getContenedorFilaPacientes().repaint();
+		getSimulGui().getContenedorFila().repaint();
+		getSimulGui().getContenedorBoxes().repaint();
+	}
+
+	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	public void actualizarInfoDinamica() {
+		ExecutorService poolPintor = Executors.newCachedThreadPool();
+		Runnable pintor = new Runnable() {
+			@Override
+			public void run() {
+				// LOG
+				log.info("Inicio Pintor");
+				int valorA = 0;
+				int valorB = 0;
+
+				while (!sim.getTermino()) {
+					try {
+						Thread.sleep(100);
+					} catch (InterruptedException e) {
+						// LOG
+						log.fatal("Error de pintor " + e.getMessage());
+					}
+
+					if (estado == estadoApp.CORRIENDO) {
+						// contenedorFila.removeAll();
+						dibujarFilaPaciente(sim.getCola().numPacientesEnCola());
+						// contenedorBoxes.repaint();
+						// contenedorFilaPacientes.repaint();
+						// contenedorFila.repaint();
+
+						getSimulGui()
+								.getTxt_ContPacientes()
+								.setText(
+										""
+												+ sim.getEstadistica()
+														.getPacientesAtendidosTotales());
+						getSimulGui().getBarraTiempo().setValue(
+								sim.gettInicio());
+						getSimulGui().getTxt_ContMuertos().setText(
+								""
+										+ sim.getEstadistica()
+												.getNumPacientesMuertos());
+
+						getSimulGui()
+								.getTxt_PacienteMax()
+								.setText(
+										""
+												+ sim.getEstadistica()
+														.getPacientesAtendidosTotales());
+						getSimulGui().getBarraPacientes().setMaximum(
+								sim.getEstadistica()
+										.getPacientesAtendidosTotales());
+						getSimulGui().getBarraPacientes()
+								.setValue(
+										sim.getEstadistica()
+												.getNumPacientesAtendidos());
+						getSimulGui().getBarraPacientes().setString(
+								""
+										+ sim.getEstadistica()
+												.getNumPacientesAtendidos());
+
+						if (sim.gettInicio() < sim.gettFin()) {
+							valorA = (int) (50 * ((double) sim.gettInicio() / (double) sim
+									.gettFin()));
+						}
+						valorB = (int) (50 * (sim.getEstadistica()
+								.getNumPacientesAtendidos() / (double) sim
+								.getEstadistica()
+								.getPacientesAtendidosTotales()));
+						getSimulGui().getBarraTotal().setValue(valorA + valorB);
+
+					} else {
+						// estado Estadistica
+						mostrarEstadistica();
+						getEstadisticaGui().getEstadisticaPopUp().repaint();
+					}
+				}
+				// cuando termina la simulacion
+				mostrarEstadistica();
+				getEstadisticaGui().getEstadisticaPopUp().repaint();
+			}
+		};
+		poolPintor.execute(pintor);
+		// LOG
+		log.info("Fin Pintor");
+		poolPintor.shutdown();
+	}
+
+	/* Boxes */
+	public void dibujarBoxes(int cantidad) {
+		int cantidadDoctores = cantidad;
+		int posicion = 15;
+
+		getSimulGui().getContenedorBoxes().removeAll();
+		for (int i = 0; i < 9; i++) {
+			JLabel box = new JLabel();
+			box.setBounds(posicion, ValoresPorDefectoGui.getBox_posY_A(),
+					ValoresPorDefectoGui.getAnchoBox(),
+					ValoresPorDefectoGui.getAltoBox());
+			if (i < cantidadDoctores) {
+				box.setIcon(config.getIconos().getIconBoxOcupado());
+			} else {
+				box.setIcon(config.getIconos().getIconBoxLibre());
+			}
+			getSimulGui().getContenedorBoxes().add(box);
+			posicion += 65;
+		}
+		posicion = 15;
+		for (int i = 0; i < 6; i++) {
+			JLabel box = new JLabel();
+			box.setBounds(posicion, ValoresPorDefectoGui.getBox_posY_B(),
+					ValoresPorDefectoGui.getAnchoBox(),
+					ValoresPorDefectoGui.getAltoBox());
+			if (i + 9 < cantidadDoctores) {
+				box.setIcon(config.getIconos().getIconBoxOcupado());
+			} else {
+				box.setIcon(config.getIconos().getIconBoxLibre());
+			}
+			getSimulGui().getContenedorBoxes().add(box);
+			posicion += 65;
+		}
+		getSimulGui().getContenedorBoxes().repaint();
+	}
+
+	/* Fila pacientes */
+	public void dibujarFilaPaciente(int cantidad) {
+		int posX = 425;
+		int posY = 0;
+
+		if (cantidad > 23)
+			cantidad = 23;
+
+		// contenedorFila.removeAll();
+		getSimulGui().getContenedorFilaPacientes().removeAll();
+		log.info("Pacientes en cola: " + cantidad);
+		for (int i = 0; i < 23; i++) {
+			if (i < cantidad) {
+				dibujarPaciente(posX, posY, config.getIconos()
+						.getIconPacienteFila());
+			} else {
+				dibujarPaciente(posX, posY, config.getIconos()
+						.getIconPacienteFilaVacio());
+			}
+			if (i < 2) {
+				posY += 50;
+			} else if (i < 10) {
+				posY = 105;
+				posX -= 44;
+			} else if (i < 11) {
+				posY = 160;
+				posX = 55;
+			} else if (i < 19) {
+				posY = 170;
+				posX += 43;
+			} else {
+				posY += 50;
+				posX = 405;
+			}
+		}
+		getSimulGui().getContenedorFila().repaint();
+		getSimulGui().getContenedorFilaPacientes().repaint();
+	}
+
+	public void dibujarPaciente(int posX, int posY, Icon icono) {
+		JLabel paciente = new JLabel();
+		paciente.setBounds(posX, posY, 35, 43);
+		paciente.setIcon(icono);
+		getSimulGui().getContenedorFilaPacientes().add(paciente);
+	}
+
+	public void mostrarEstadistica() {
+		getEstadisticaGui()
+				.getTxt_Resultado_EstadHoraActual()
+				.setText(
+						new CorreccionHorario().arreglarHora(sim.gettInicio() / 60)
+								+ ":"
+								+ new CorreccionHorario().arreglarHora(sim
+										.gettInicio() % 60));
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesTotales().setText(
+				"" + sim.getEstadistica().getNumPacientesAtendidos());
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesAlta().setText(
+				"" + sim.getEstadistica().getPacientesAtendidosAlta());
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesMedia().setText(
+				"" + sim.getEstadistica().getPacientesAtendidosMedia());
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesBaja().setText(
+				"" + sim.getEstadistica().getPacientesAtendidosBaja());
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesMuertos().setText(
+				"" + sim.getEstadistica().getNumPacientesMuertos());
+		getEstadisticaGui().getTxt_Resultado_EstadPacientesFila().setText(
+				"" + sim.getCola().numPacientesEnCola());
+		int esperaPromedio = (int) sim.getEstadistica().esperaPromedio();
+		getEstadisticaGui().getTxt_Resultado_EstadEsperaPromedio().setText(
+				new CorreccionHorario().arreglarHora(esperaPromedio / 60)
+						+ ":"
+						+ new CorreccionHorario()
+								.arreglarHora(esperaPromedio % 60));
+		int tiempoEspera = sim.getEstadistica().getTiempoTotalDeEspera();
+		getEstadisticaGui().getTxt_Resultado_EstadTiempoEsperaTotal().setText(
+				new CorreccionHorario().arreglarHora(tiempoEspera / 60)
+						+ ":"
+						+ new CorreccionHorario()
+								.arreglarHora(tiempoEspera % 60));
+	}
+
+	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	private class Task extends SwingWorker<Integer, Integer> {
+		@Override
+		protected Integer doInBackground() throws Exception {
+			int velocidad = Integer.parseInt(getConfigGui()
+					.getTxt_ConfResultadoVelocidad().getText());
+			velocidad = (velocidad - 100) * -1;// acomoda la velocidad
+			sim = new Simulacion(velocidad);
+			try {
+				sim.cargarArchivo(ConfigGuiPaths.getPathUrgenciasStr());
+				sim.simular(cantidadDoc, hsInicial, minInicial, hsFinal,
+						minFinal, porcentajeMin);
+			} catch (FileNotFoundException e2) {
+				// LOG
+				log.fatal("Error simulacion abrir archivo: " + e2.getMessage());
+			} catch (Throwable e1) {
+				// LOG
+				log.fatal("Error simular: " + e1.getClass());
+			}
+			log.info("Fin de Simulacion");
+			return 0;
+		}
+
+		public void doTask() {
+			Task task = new Task();
+			task.execute();
+		}
+
+		@Override
+		protected void done() {
+			if (isCancelled()) {
+				// LOG
+				log.info("DoInBackGround Cancelado");
+			} else {
+				// LOG
+				log.info("DoInBackGround Terminado");
+			}
+		}
+	}
+
+	@Override
+	public void mouseDragged(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void mouseMoved(MouseEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent arg0) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void configurarLogger() {
+		try {
+			PropertyConfigurator.configure(new FileInputStream(ConfigGuiPaths
+					.getPathLog4jPropertiesStr()));
+		} catch (FileNotFoundException e1) {
+			try {
+				PropertyConfigurator.configure(InputStream.class
+						.getResourceAsStream(ConfigGuiPaths
+								.getPathLog4jPropertiesStr()));
+			} catch (Exception e) {
+				System.err.println(IdiomaGui.getErrorAlcargarLogger());
+				e1.printStackTrace();
+			}
+		}
+	}
+	public void setearListeners(){
 		/**
 		 * El orden de incorporacion de los eventos a cada boton sera:
 		 * 
@@ -271,304 +584,6 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		// Agrego configGuiPopUp a la ventana
 		frmHospital.getContentPane()
 				.add(getConfigGui().getConfiguracionPopUp());
-	}
-
-	public void setEstadoApp(estadoApp est) {
-		estado = est;
-	}
-
-	public estadoApp getEstadoApp() {
-		return estado;
-	}
-
-	public void actualizarInfoEstatica(int cantidad, int hsMin, int hsMax) {
-		/* SimulacionGui */
-		getSimulGui().getTxt_ContDoctores().setText("" + cantidad);
-		getSimulGui().getTxt_TiempoMin().setText(
-				new CorreccionHorario().arreglarHora(hsInicial) + ":"
-						+ new CorreccionHorario().arreglarHora(minInicial));
-		getSimulGui().getTxt_TiempoMax().setText(
-				new CorreccionHorario().arreglarHora(hsFinal) + ":"
-						+ new CorreccionHorario().arreglarHora(minFinal));
-		getSimulGui().getBarraTiempo().setMinimum(hsMin);
-		getSimulGui().getBarraTiempo().setMaximum(hsMax);
-
-		/* Estadistica */
-		getEstadisticaGui().getTxt_Resultado_EstadHoraInicio().setText(
-				new CorreccionHorario().arreglarHora(hsInicial) + ":"
-						+ new CorreccionHorario().arreglarHora(minInicial));
-		getEstadisticaGui().getTxt_Resultado_EstadHoraFin().setText(
-				new CorreccionHorario().arreglarHora(hsFinal) + ":"
-						+ new CorreccionHorario().arreglarHora(minFinal));
-		getEstadisticaGui().getTxt_Resultado_EstadCantidadDoc().setText(
-				"" + cantidad);
-
-		/* SimulacionGui */
-		dibujarBoxes(cantidad);
-		getSimulGui().getContenedorFilaPacientes().repaint();
-		getSimulGui().getContenedorFila().repaint();
-		getSimulGui().getContenedorBoxes().repaint();
-	}
-
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	public void actualizarInfoDinamica() {
-		ExecutorService poolPintor = Executors.newCachedThreadPool();
-		Runnable pintor = new Runnable() {
-			@Override
-			public void run() {
-				// LOG
-				log.info("Inicio Pintor");
-				int valorA = 0;
-				int valorB = 0;
-
-				while (!sim.getTermino()) {
-					try {
-						Thread.sleep(100);
-					} catch (InterruptedException e) {
-						// LOG
-						log.fatal("Error de pintor " + e.getMessage());
-					}
-
-					if (estado == estadoApp.CORRIENDO) {
-						// contenedorFila.removeAll();
-						dibujarFilaPaciente(sim.getCola().numPacientesEnCola());
-						// contenedorBoxes.repaint();
-						// contenedorFilaPacientes.repaint();
-						// contenedorFila.repaint();
-
-						getSimulGui()
-								.getTxt_ContPacientes()
-								.setText(
-										""
-												+ sim.getEstadistica()
-														.getPacientesAtendidosTotales());
-						getSimulGui().getBarraTiempo().setValue(
-								sim.gettInicio());
-						getSimulGui().getTxt_ContMuertos().setText(
-								""
-										+ sim.getEstadistica()
-												.getNumPacientesMuertos());
-
-						getSimulGui()
-								.getTxt_PacienteMax()
-								.setText(
-										""
-												+ sim.getEstadistica()
-														.getPacientesAtendidosTotales());
-						getSimulGui().getBarraPacientes().setMaximum(
-								sim.getEstadistica()
-										.getPacientesAtendidosTotales());
-						getSimulGui().getBarraPacientes()
-								.setValue(
-										sim.getEstadistica()
-												.getNumPacientesAtendidos());
-						getSimulGui().getBarraPacientes().setString(
-								""
-										+ sim.getEstadistica()
-												.getNumPacientesAtendidos());
-
-						if (sim.gettInicio() < sim.gettFin()) {
-							valorA = (int) (50 * ((double) sim.gettInicio() / (double) sim
-									.gettFin()));
-						}
-						valorB = (int) (50 * (sim.getEstadistica()
-								.getNumPacientesAtendidos() / (double) sim
-								.getEstadistica()
-								.getPacientesAtendidosTotales()));
-						getSimulGui().getBarraTotal().setValue(valorA + valorB);
-
-					} else {
-						// estado Estadistica
-						mostrarEstadistica();
-						getEstadisticaGui().getEstadisticaPopUp().repaint();
-					}
-				}
-				// cuando termina la simulacion
-				mostrarEstadistica();
-				getEstadisticaGui().getEstadisticaPopUp().repaint();
-			}
-		};
-		poolPintor.execute(pintor);
-		// LOG
-		log.info("Fin Pintor");
-		poolPintor.shutdown();
-	}
-
-	/* Boxes */
-	public void dibujarBoxes(int cantidad) {
-		int cantidadDoctores = cantidad;
-		int posicion = 15;
-
-		getSimulGui().getContenedorBoxes().removeAll();
-		for (int i = 0; i < 9; i++) {
-			JLabel box = new JLabel();
-			box.setBounds(posicion, config.getValoresDef().getBox_posY_A(),
-					config.getValoresDef().getAnchoBox(), config
-							.getValoresDef().getAltoBox());
-			if (i < cantidadDoctores) {
-				box.setIcon(config.getIconos().getIconBoxOcupado());
-			} else {
-				box.setIcon(config.getIconos().getIconBoxLibre());
-			}
-			getSimulGui().getContenedorBoxes().add(box);
-			posicion += 65;
-		}
-
-		posicion = 15;
-		for (int i = 0; i < 6; i++) {
-			JLabel box = new JLabel();
-			box.setBounds(posicion, config.getValoresDef().getBox_posY_B(),
-					config.getValoresDef().getAnchoBox(), config
-							.getValoresDef().getAltoBox());
-			if (i + 9 < cantidadDoctores) {
-				box.setIcon(config.getIconos().getIconBoxOcupado());
-			} else {
-				box.setIcon(config.getIconos().getIconBoxLibre());
-			}
-			getSimulGui().getContenedorBoxes().add(box);
-			posicion += 65;
-		}
-		getSimulGui().getContenedorBoxes().repaint();
-	}
-
-	/* Fila pacientes */
-	public void dibujarFilaPaciente(int cantidad) {
-		int posX = 425;
-		int posY = 0;
-
-		if (cantidad > 23)
-			cantidad = 23;
-
-		// contenedorFila.removeAll();
-		getSimulGui().getContenedorFilaPacientes().removeAll();
-		log.info("Pacientes en cola: " + cantidad);
-		for (int i = 0; i < 23; i++) {
-			if (i < cantidad) {
-				dibujarPaciente(posX, posY, config.getIconos()
-						.getIconPacienteFila());
-			} else {
-				dibujarPaciente(posX, posY, config.getIconos()
-						.getIconPacienteFilaVacio());
-			}
-			if (i < 2) {
-				posY += 50;
-			} else if (i < 10) {
-				posY = 105;
-				posX -= 44;
-			} else if (i < 11) {
-				posY = 160;
-				posX = 55;
-			} else if (i < 19) {
-				posY = 170;
-				posX += 43;
-			} else {
-				posY += 50;
-				posX = 405;
-			}
-		}
-		getSimulGui().getContenedorFila().repaint();
-		getSimulGui().getContenedorFilaPacientes().repaint();
-	}
-
-	public void dibujarPaciente(int posX, int posY, Icon icono) {
-		JLabel paciente = new JLabel();
-		paciente.setBounds(posX, posY, 35, 43);
-		paciente.setIcon(icono);
-		getSimulGui().getContenedorFilaPacientes().add(paciente);
-	}
-
-	public void mostrarEstadistica() {
-		getEstadisticaGui()
-				.getTxt_Resultado_EstadHoraActual()
-				.setText(
-						new CorreccionHorario().arreglarHora(sim.gettInicio() / 60)
-								+ ":"
-								+ new CorreccionHorario().arreglarHora(sim
-										.gettInicio() % 60));
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesTotales().setText(
-				"" + sim.getEstadistica().getNumPacientesAtendidos());
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesAlta().setText(
-				"" + sim.getEstadistica().getPacientesAtendidosAlta());
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesMedia().setText(
-				"" + sim.getEstadistica().getPacientesAtendidosMedia());
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesBaja().setText(
-				"" + sim.getEstadistica().getPacientesAtendidosBaja());
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesMuertos().setText(
-				"" + sim.getEstadistica().getNumPacientesMuertos());
-		getEstadisticaGui().getTxt_Resultado_EstadPacientesFila().setText(
-				"" + sim.getCola().numPacientesEnCola());
-		int esperaPromedio = (int) sim.getEstadistica().esperaPromedio();
-		getEstadisticaGui().getTxt_Resultado_EstadEsperaPromedio().setText(
-				new CorreccionHorario().arreglarHora(esperaPromedio / 60)
-						+ ":"
-						+ new CorreccionHorario()
-								.arreglarHora(esperaPromedio % 60));
-		int tiempoEspera = sim.getEstadistica().getTiempoTotalDeEspera();
-		getEstadisticaGui().getTxt_Resultado_EstadTiempoEsperaTotal().setText(
-				new CorreccionHorario().arreglarHora(tiempoEspera / 60)
-						+ ":"
-						+ new CorreccionHorario()
-								.arreglarHora(tiempoEspera % 60));
-	}
-
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	private class Task extends SwingWorker<Integer, Integer> {
-		@Override
-		protected Integer doInBackground() throws Exception {
-			int velocidad = Integer.parseInt(getConfigGui()
-					.getTxt_ConfResultadoVelocidad().getText());
-			velocidad = (velocidad - 100) * -1;// acomoda la velocidad
-			sim = new Simulacion(velocidad);
-			try {
-				sim.cargarArchivo(pathUrgenciasStr);
-				sim.simular(cantidadDoc, hsInicial, minInicial, hsFinal,
-						minFinal, porcentajeMin);
-			} catch (FileNotFoundException e2) {
-				// LOG
-				log.fatal("Error simulacion abrir archivo: " + e2.getMessage());
-			} catch (Throwable e1) {
-				// LOG
-				log.fatal("Error simular: " + e1.getClass());
-			}
-			log.info("Fin de Simulacion");
-			return 0;
-		}
-
-		public void doTask() {
-			Task task = new Task();
-			task.execute();
-		}
-
-		@Override
-		protected void done() {
-			if (isCancelled()) {
-				// LOG
-				log.info("DoInBackGround Cancelado");
-			} else {
-				// LOG
-				log.info("DoInBackGround Terminado");
-			}
-		}
-	}
-
-	@Override
-	public void mouseDragged(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public LogGui getLogGui() {
