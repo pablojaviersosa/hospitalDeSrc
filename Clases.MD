@@ -5,7 +5,7 @@ ___
 
 #### GuiHospital instancia las pantallas, agrega los listener a los botones y se encarga de interactuar en background con la simulacion propiamente dicha.
 
-![MainGuiPantallas Logo] (./Diagramas de Clases"/MainGuiPantallas.png?raw=true)
+![MainGuiPantallas Logo] (https://github.com/pablojaviersosa/hospitalDeSrc/blob/master/Diagramas%20de%20Clases/MainGuiPantallas.png?raw=true)
 
 ____
 #### GuiHospital instancia una clase Simulación y una SwingWorkerTask, que recibe una referencia de la simulacion y en las condiciones apropiadas ejecuta el método simular de dicha clase
