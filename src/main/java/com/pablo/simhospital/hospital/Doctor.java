@@ -5,6 +5,7 @@ import java.util.Random;
 import org.apache.log4j.Logger;
 
 import main.java.com.pablo.simhospital.cola.Buffer;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 
 /**
  * Desencola un paciente Completa la estadistica Demora proporcional en
@@ -54,31 +55,28 @@ public class Doctor implements Runnable {
 
 		try {
 			while (horaActual < tiempoFin || sharedLocation.isNotEmpty()) {
-				paciente = sharedLocation.get(this);
+				paciente = sharedLocation.get(this);//toma un paciente de la cola
 				if (paciente != null) {
 					// LOG
-					log.info("\tDoctor " + getNombre() + "\tAtiende Paciente");
+					log.info( "\t" + IdiomaGui.getDocMsj()+ getNombre() + "\t"+IdiomaGui.getDocAtiendeMsj());
 					horaActual = sim.gettInicio();
-					tiempoAtencion = generator.nextInt(maxRNDTiempoAtencion)
-							+ baseTiempoAtencion;
-					tiempoDeEsperaPaciente = horaActual
-							- paciente.getTLlegada();
+					//genera un tiempo de espera proporcional a la urgencia del paciente
+					tiempoAtencion = generator.nextInt(maxRNDTiempoAtencion) + baseTiempoAtencion;
+					tiempoDeEsperaPaciente = horaActual - paciente.getTLlegada();
 					sim.getEstadistica().incrementarNumPacientesAtendidos();
-
 					if (tiempoDeEsperaPaciente > paciente.getTiempoVida())
 						sim.getEstadistica().incrementarNumPacientesMuertos();
 
 					sim.getEstadistica().setTiempoTotalDeEspera(
-							sim.getEstadistica().getTiempoTotalDeEspera()
-									+ (tiempoDeEsperaPaciente));
+							sim.getEstadistica().getTiempoTotalDeEspera() + (tiempoDeEsperaPaciente));
 					while (tiempoAtencion + horaActual > sim.gettInicio())
 						Thread.sleep(Simulacion.getBaseMinutoMs());
 				}
 			}
 		} catch (InterruptedException e) {
-			log.trace("Explota Doctor" + e);
+			log.trace(IdiomaGui.getFinDeHiloDoctorMsj() + e);//Cada vez que se realiza un Stop
 		}
-		log.info("Doctor " + nombre + " termino atención.");
+		log.info(IdiomaGui.getDocMsj()+ nombre +IdiomaGui.getTerminoDocMsj());
 	}
 
 	/**

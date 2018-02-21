@@ -2,6 +2,7 @@ package main.java.com.pablo.simhospital.hospital;
 
 import org.apache.log4j.Logger;
 
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 import main.java.com.pablo.simhospital.util.NumeroAleatorio;
 
 /**
@@ -53,7 +54,7 @@ public class Paciente implements Comparable<Paciente> {
 
 	@Override
 	public String toString() {
-		return "Paciente HoraLlegada: " + tLlegada + " Prioridad: "
+		return IdiomaGui.getHoraLlegadaPacienteMsj() + tLlegada + " "+ IdiomaGui.getPrioridadMsj()+" "+
 				+ tipoPrioridad;
 	}
 
@@ -75,21 +76,21 @@ public class Paciente implements Comparable<Paciente> {
 			base = Paciente.baseTiempoDeVidaAlta;
 			base += Math.abs(NumeroAleatorio.Aleatorio.entero(base,
 					rangoTiempoDeVidaAlta));
-			log.debug("Urgencia Alta - tiempo de vida: " + base);
+			log.debug(IdiomaGui.getuAtiempoDeVidaMsj() + base);
 			break;
 		case 1:
 			base = Paciente.baseTiempoDeVidaMedia;
 			base += Math.abs(NumeroAleatorio.Aleatorio.entero(base,
 					rangoTiempoDeVidaMedia));
-			log.debug("Urgencia Media - tiempo de vida: " + base);
+			log.debug(IdiomaGui.getuMtiempoDeVidaMsj() + base);
 			break;
 		case 2:
 			base = Paciente.baseTiempoDeVidaBaja;
-			log.debug("Urgencia Baja - tiempo de vida: " + base);
+			log.debug(IdiomaGui.getuBtiempoDeVidaMsj() + base);
 			break;
 		default:
 			base = Paciente.baseTiempoDeVidaAlta;
-			log.debug("Urgencia Default - tiempo de vida: " + base);
+			log.debug(IdiomaGui.getuDtiempoDeVidaMsj() + base);
 			break;
 		}
 		this.tiempoVida = base;

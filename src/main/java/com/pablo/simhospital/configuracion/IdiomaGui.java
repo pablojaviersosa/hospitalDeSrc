@@ -12,7 +12,11 @@ public class IdiomaGui {
 			ingresoPacienteBajaMsj, pacienteEnColaMsj, finSimulacionMsj,
 			numeroTotalPacientesAltaMsj, numeroTotalPacientesMediaMsj,
 			numeroTotalPacientesMsj, numeroTotalPacientesBajaMsj,
-			esperaPromedioMsj;
+			esperaPromedioMsj,finDeHiloDoctorMsj,docMsj,terminoDocMsj,
+			docAtiendeMsj,esperaPacientesMsj;
+	/*Paciente*/
+	static String horaLlegadaPacienteMsj,prioridadMsj,uAtiempoDeVidaMsj,
+	uMtiempoDeVidaMsj,uBtiempoDeVidaMsj,uDtiempoDeVidaMsj;
 	static String doInBackCanceladoMsj,doInBackTerminadoMsj;
 	/* Estadistica */
 	static String tituloEstadisticaMsj;
@@ -393,6 +397,94 @@ public class IdiomaGui {
 
 	public static void setDoInBackCanceladoMsj(String doInBackCanceladoMsj) {
 		IdiomaGui.doInBackCanceladoMsj = doInBackCanceladoMsj;
+	}
+
+	public static String getFinDeHiloDoctorMsj() {
+		return finDeHiloDoctorMsj;
+	}
+
+	public static void setFinDeHiloDoctorMsj(String finDeHiloDoctorMsj) {
+		IdiomaGui.finDeHiloDoctorMsj = finDeHiloDoctorMsj;
+	}
+
+	public static String getDocMsj() {
+		return docMsj;
+	}
+
+	public static void setDocMsj(String docMsj) {
+		IdiomaGui.docMsj = docMsj;
+	}
+
+	public static String getTerminoDocMsj() {
+		return terminoDocMsj;
+	}
+
+	public static void setTerminoDocMsj(String terminoDocMsj) {
+		IdiomaGui.terminoDocMsj = terminoDocMsj;
+	}
+
+	public static String getDocAtiendeMsj() {
+		return docAtiendeMsj;
+	}
+
+	public static void setDocAtiendeMsj(String docAtiendeMsj) {
+		IdiomaGui.docAtiendeMsj = docAtiendeMsj;
+	}
+
+	public static String getEsperaPacientesMsj() {
+		return esperaPacientesMsj;
+	}
+
+	public static void setEsperaPacientesMsj(String esperaPacientesMsj) {
+		IdiomaGui.esperaPacientesMsj = esperaPacientesMsj;
+	}
+
+	public static String getHoraLlegadaPacienteMsj() {
+		return horaLlegadaPacienteMsj;
+	}
+
+	public static void setHoraLlegadaPacienteMsj(String horaLlegadaPacienteMsj) {
+		IdiomaGui.horaLlegadaPacienteMsj = horaLlegadaPacienteMsj;
+	}
+
+	public static String getPrioridadMsj() {
+		return prioridadMsj;
+	}
+
+	public static void setPrioridadMsj(String prioridadMsj) {
+		IdiomaGui.prioridadMsj = prioridadMsj;
+	}
+
+	public static String getuAtiempoDeVidaMsj() {
+		return uAtiempoDeVidaMsj;
+	}
+
+	public static void setuAtiempoDeVidaMsj(String uAtiempoDeVidaMsj) {
+		IdiomaGui.uAtiempoDeVidaMsj = uAtiempoDeVidaMsj;
+	}
+
+	public static String getuMtiempoDeVidaMsj() {
+		return uMtiempoDeVidaMsj;
+	}
+
+	public static void setuMtiempoDeVidaMsj(String uMtiempoDeVidaMsj) {
+		IdiomaGui.uMtiempoDeVidaMsj = uMtiempoDeVidaMsj;
+	}
+
+	public static String getuBtiempoDeVidaMsj() {
+		return uBtiempoDeVidaMsj;
+	}
+
+	public static void setuBtiempoDeVidaMsj(String uBtiempoDeVidaMsj) {
+		IdiomaGui.uBtiempoDeVidaMsj = uBtiempoDeVidaMsj;
+	}
+
+	public static String getuDtiempoDeVidaMsj() {
+		return uDtiempoDeVidaMsj;
+	}
+
+	public static void setuDtiempoDeVidaMsj(String uDtiempoDeVidaMsj) {
+		IdiomaGui.uDtiempoDeVidaMsj = uDtiempoDeVidaMsj;
 	}
 
 }

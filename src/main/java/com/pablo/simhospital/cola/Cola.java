@@ -1,5 +1,6 @@
 package main.java.com.pablo.simhospital.cola;
 
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 import main.java.com.pablo.simhospital.hospital.Doctor;
 import main.java.com.pablo.simhospital.hospital.Paciente;
 
@@ -54,7 +55,7 @@ public class Cola extends PriorityQueue<Paciente> implements Buffer {
 		Paciente paciente = null;
 
 		while (this.isEmpty()) {
-			log.info("Doctor " + doctor.getNombre() + " espera Pacientes");
+			log.info(IdiomaGui.getDocMsj() + doctor.getNombre() + IdiomaGui.getEsperaPacientesMsj());
 			wait();
 		}
 		if (!this.isEmpty())

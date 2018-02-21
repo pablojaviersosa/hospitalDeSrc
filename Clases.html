@@ -1,0 +1,19 @@
+<h1>Diagramas de clases</h1>
+
+<hr />
+
+<h3>Diagrama de clases de las pantallas de la aplicacion</h3>
+
+<p><strong><em>GuiHospital instancia las pantallas, agrega los listener a los botones y se encarga de interactuar en background con la simulacion propiamente dicha.</em></strong></p>
+
+<p>!<a href="./Diagramas de Clases/MainGuiPantallas.png">alt text</a></p>
+
+<hr />
+
+<p><strong><em>GuiHospital instancia una clase Simulación y una SwingWorkerTask, que recibe una referencia de la simulacion y en las condiciones apropiadas ejecuta el método simular de dicha clase</em></strong>
+!<a href="./Diagramas de Clases/relacionHospGuiSim.png">alt text</a></p>
+
+<hr />
+
+<p><strong><em>La simulación tiene una _cola con prioridad_  de pacientes que implementa una interfaz buffer para poder realizar la sincronización, ya que cada Doctor es un Hilo que "consume" pacientes</em></strong>
+!<a href="./Diagramas de Clases/backend.png">alt text</a></p>

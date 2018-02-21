@@ -32,6 +32,7 @@ import org.apache.log4j.PropertyConfigurator;
 /**
  * GuiHospital es el controlador de los eventos de las ventanas
  * ConfiguracionGui, EstadisticaGui, LogGui, SimulacionGui.
+ * Pinta y actualiza información de las mismas.
  * 
  * Manda a ejecutar la simulacion.
  * 
@@ -105,6 +106,7 @@ public class GuiHospital {
 		estadisticaGui = new EstadisticaGui(config);
 		simulGui = new SimulacionGui(config);
 		setEstadoApp(estadoApp.CONFIGURACION);
+		//Larga a correr la simulacion en backgroud
 		task1 = new Task();
 
 		/* Ventana Principal */
@@ -236,7 +238,6 @@ public class GuiHospital {
 			}
 		};
 		poolPintor.execute(pintor);
-		// log.info("Fin Pintor");
 		poolPintor.shutdown();
 	}
 
