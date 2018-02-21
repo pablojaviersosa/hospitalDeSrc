@@ -13,6 +13,7 @@ public class Estadistica {
 	private int pacientesAtenidosAlta;
 	private int pacientesAtenidosMedia;
 	private int pacientesAtenidosBaja;
+	private int esperaPromedio;
 
 	/**
 	 * Contructor
@@ -137,6 +138,14 @@ public class Estadistica {
 	 * @return La espera promedio
 	 */
 	public double esperaPromedio() {
-		return (double) getTiempoTotalDeEspera() / getNumPacientesAtendidos();
+		return ((double) getTiempoTotalDeEspera()) /((double) getNumPacientesAtendidos());
+	}
+
+	public int getEsperaPromedio() {
+		return esperaPromedio;
+	}
+
+	public void setEsperaPromedio(int esperaPromedio) {
+		this.esperaPromedio = esperaPromedio;
 	}
 }

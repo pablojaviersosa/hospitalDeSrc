@@ -45,8 +45,6 @@ public class IconosGui {
 	}
 
 	private void load() {
-		System.out.println(getPathRecursoIconos()
-						+ getIconLogStr());
 		setIconLog(new ImageIcon(
 				SimulacionGui.class.getResource(getPathRecursoIconos()
 						+ getIconLogStr())));
@@ -90,7 +88,7 @@ public class IconosGui {
 	}
 
 	public void setIconLogStr(String iconLogStr) {
-		this.iconLogStr = iconLogStr;
+		IconosGui.iconLogStr = iconLogStr;
 	}
 
 	public String getIconPLayStr() {
@@ -98,7 +96,7 @@ public class IconosGui {
 	}
 
 	public void setIconPLayStr(String iconPLayStr) {
-		this.iconPLayStr = iconPLayStr;
+		IconosGui.iconPLayStr = iconPLayStr;
 	}
 
 	public String getIconBackStr() {
@@ -106,7 +104,7 @@ public class IconosGui {
 	}
 
 	public void setIconBackStr(String iconBackStr) {
-		this.iconBackStr = iconBackStr;
+		IconosGui.iconBackStr = iconBackStr;
 	}
 
 	public String getIconEsadisticaStr() {
@@ -114,7 +112,7 @@ public class IconosGui {
 	}
 
 	public void setIconEsadisticaStr(String iconEsadisticaStr) {
-		this.iconEsadisticaStr = iconEsadisticaStr;
+		IconosGui.iconEsadisticaStr = iconEsadisticaStr;
 	}
 
 	public String getIconStopStr() {
@@ -122,7 +120,7 @@ public class IconosGui {
 	}
 
 	public void setIconStopStr(String iconStopStr) {
-		this.iconStopStr = iconStopStr;
+		IconosGui.iconStopStr = iconStopStr;
 	}
 
 	public String getIconPacienteStr() {
@@ -130,7 +128,7 @@ public class IconosGui {
 	}
 
 	public void setIconPacienteStr(String iconPacienteStr) {
-		this.iconPacienteStr = iconPacienteStr;
+		IconosGui.iconPacienteStr = iconPacienteStr;
 	}
 
 	public String getIconPacienteFilaStr() {
@@ -138,7 +136,7 @@ public class IconosGui {
 	}
 
 	public void setIconPacienteFilaStr(String iconPacienteFilaStr) {
-		this.iconPacienteFilaStr = iconPacienteFilaStr;
+		IconosGui.iconPacienteFilaStr = iconPacienteFilaStr;
 	}
 
 	public String getIconPacienteFilaVacioStr() {
@@ -146,7 +144,7 @@ public class IconosGui {
 	}
 
 	public void setIconPacienteFilaVacioStr(String iconPacienteFilaVacioStr) {
-		this.iconPacienteFilaVacioStr = iconPacienteFilaVacioStr;
+		IconosGui.iconPacienteFilaVacioStr = iconPacienteFilaVacioStr;
 	}
 
 	public String getIconDocStr() {
@@ -154,7 +152,7 @@ public class IconosGui {
 	}
 
 	public void setIconDocStr(String iconDocStr) {
-		this.iconDocStr = iconDocStr;
+		IconosGui.iconDocStr = iconDocStr;
 	}
 
 	public String getIconMuertosStr() {
@@ -162,7 +160,7 @@ public class IconosGui {
 	}
 
 	public void setIconMuertosStr(String iconMuertosStr) {
-		this.iconMuertosStr = iconMuertosStr;
+		IconosGui.iconMuertosStr = iconMuertosStr;
 	}
 
 	public String getIconBoxOcupadoStr() {
@@ -170,7 +168,7 @@ public class IconosGui {
 	}
 
 	public void setIconBoxOcupadoStr(String iconBoxOcupadoStr) {
-		this.iconBoxOcupadoStr = iconBoxOcupadoStr;
+		IconosGui.iconBoxOcupadoStr = iconBoxOcupadoStr;
 	}
 
 	public String getIconBoxLibreStr() {
@@ -178,7 +176,7 @@ public class IconosGui {
 	}
 
 	public void setIconBoxLibreStr(String iconBoxLibreStr) {
-		this.iconBoxLibreStr = iconBoxLibreStr;
+		IconosGui.iconBoxLibreStr = iconBoxLibreStr;
 	}
 
 	public Icon getIconLog() {

@@ -7,9 +7,6 @@ import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
-//TODO
-//import java.awt.event.MouseAdapter;
-//import java.awt.event.MouseEvent;
 import java.awt.geom.Line2D;
 
 import javax.swing.JButton;
@@ -21,9 +18,16 @@ import javax.swing.border.LineBorder;
 
 import main.java.com.pablo.simhospital.configuracion.Configuracion;
 import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
-
-import javax.swing.ImageIcon;
-
+/**
+ * Clase que representa la pantalla de simulacion.
+ * Cuenta con dos columnas,la izquierda llamada sala, donde se visualizan la cola de 
+ * pacientes los cuartos de los doctores, boton de stop que detiene la simulacion
+ * y boton de estadistica que muestra el avance de la simulacion en el tiempo.A la 
+ * derecha la columna menu, con las barras de progreso y recuento de pacientes, muertos y
+ * doctores.
+ * 
+ * 
+ * */
 public class SimulacionGui {
 	/* SimulacionGui */
 	private JPanel sala, menu, contenedorBoxes, contenedorFila,
@@ -81,8 +85,7 @@ public class SimulacionGui {
 
 		ic_pacientes = new JLabel();
 		ic_pacientes.setBounds(0, 0, 51, 62);
-		ic_pacientes.setIcon(new ImageIcon(SimulacionGui.class
-				.getResource("/main/recursos/iconos/ic_paciente.png")));
+		ic_pacientes.setIcon(config.getIconos().getIconPaciente());
 		contenedorPaciente.add(ic_pacientes);
 
 		txt_puntos_pacientes = new JTextPane();
@@ -113,8 +116,7 @@ public class SimulacionGui {
 		menu.add(contenedorDoc);
 
 		ic_doctores = new JLabel();
-		ic_doctores.setIcon(new ImageIcon(SimulacionGui.class
-				.getResource("/main/recursos/iconos/ic_doc.png")));
+		ic_doctores.setIcon(config.getIconos().getIconDoc());
 		ic_doctores.setBounds(0, 0, 51, 62);
 		contenedorDoc.add(ic_doctores);
 
@@ -384,8 +386,8 @@ public class SimulacionGui {
 
 		btn_Estadistica = new JButton();
 		btn_Estadistica.setIcon(config.getIconos().getIconEsadistica());
-		btn_Estadistica.setToolTipText(IdiomaGui
-				.getBtnEstadisticaAyudaMsj());
+//		btn_Estadistica.setToolTipText(IdiomaGui
+//				.getBtnEstadisticaAyudaMsj());
 		btn_Estadistica.setBackground(null);
 		btn_Estadistica.setBorderPainted(false);
 		btn_Estadistica.setFocusPainted(false);
@@ -397,7 +399,7 @@ public class SimulacionGui {
 
 		btn_Stop = new JButton();
 		btn_Stop.setIcon(config.getIconos().getIconStop());
-		btn_Stop.setToolTipText(IdiomaGui.getBtnStopAyudaMsj());
+//		btn_Stop.setToolTipText(IdiomaGui.getBtnStopAyudaMsj());
 		btn_Stop.setBackground(null);
 		btn_Stop.setBorderPainted(false);
 		btn_Stop.setFocusPainted(false);

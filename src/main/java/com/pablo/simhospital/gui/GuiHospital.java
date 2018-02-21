@@ -2,11 +2,9 @@ package main.java.com.pablo.simhospital.gui;
 
 import java.awt.Color;
 import java.awt.EventQueue;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.awt.event.MouseMotionListener;
+import java.awt.event.MouseListener;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.InputStream;
@@ -31,7 +29,16 @@ import main.java.com.pablo.simhospital.util.CorreccionHorario;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
 
-public class GuiHospital implements ActionListener, MouseMotionListener {
+/**
+ * GuiHospital es el controlador de los eventos de las ventanas
+ * ConfiguracionGui, EstadisticaGui, LogGui, SimulacionGui.
+ * 
+ * Manda a ejecutar la simulacion.
+ * 
+ * @author Pablo Sosa
+ * 
+ */
+public class GuiHospital {
 	private static ExecutorService hiloMusical;
 	private static Logger log = Logger.getLogger("LoggerGui");
 	private static String homePath;
@@ -49,7 +56,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	private Simulacion sim;
 	// private CounterTask task;
 	private Task task1;
-	
+
 	private int cantidadDoc;
 	private int hsInicial;
 	private int minInicial;
@@ -62,7 +69,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	};
 
 	public static void main(String[] args) {
-		
+
 		setHomePath("/main/config/");
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -83,9 +90,9 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	private void initialize() {
 		// carga las propiedades de todos los recursos del sitema y los
 		// instancia
-		config = new Configuracion(getHomePath()+"common.properties"); //"src/main/config/common.properties"
+		config = new Configuracion(getHomePath() + "common.properties");
 		configurarLogger();
-		//musica
+		// musica
 		hiloMusical = Executors.newCachedThreadPool();
 		try {
 			MusicaGui player = new MusicaGui();
@@ -93,13 +100,12 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		//pantallas
+		// pantallas
 		logGui = new LogGui(config);
 		configGui = new ConfiguracionGui(config);
 		estadisticaGui = new EstadisticaGui(config);
 		simulGui = new SimulacionGui(config);
 		setEstadoApp(estadoApp.CONFIGURACION);
-		// task = new CounterTask();
 		task1 = new Task();
 
 		/* Ventana Principal */
@@ -110,7 +116,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		frmHospital.setTitle(IdiomaGui.getTituloHospitalMsj());
 		frmHospital.setBounds(100, 100, 800, 600);
 		frmHospital.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+		// Setea los listener a los botones de las pantallas
 		setearListeners();
 	}
 
@@ -126,21 +132,21 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		/* SimulacionGui */
 		getSimulGui().getTxt_ContDoctores().setText("" + cantidad);
 		getSimulGui().getTxt_TiempoMin().setText(
-				new CorreccionHorario().arreglarHora(hsInicial) + ":"
-						+ new CorreccionHorario().arreglarHora(minInicial));
+				CorreccionHorario.arreglarHora(hsInicial) + ":"
+						+ CorreccionHorario.arreglarHora(minInicial));
 		getSimulGui().getTxt_TiempoMax().setText(
-				new CorreccionHorario().arreglarHora(hsFinal) + ":"
-						+ new CorreccionHorario().arreglarHora(minFinal));
+				CorreccionHorario.arreglarHora(hsFinal) + ":"
+						+ CorreccionHorario.arreglarHora(minFinal));
 		getSimulGui().getBarraTiempo().setMinimum(hsMin);
 		getSimulGui().getBarraTiempo().setMaximum(hsMax);
 
 		/* Estadistica */
 		getEstadisticaGui().getTxt_Resultado_EstadHoraInicio().setText(
-				new CorreccionHorario().arreglarHora(hsInicial) + ":"
-						+ new CorreccionHorario().arreglarHora(minInicial));
+				CorreccionHorario.arreglarHora(hsInicial) + ":"
+						+ CorreccionHorario.arreglarHora(minInicial));
 		getEstadisticaGui().getTxt_Resultado_EstadHoraFin().setText(
-				new CorreccionHorario().arreglarHora(hsFinal) + ":"
-						+ new CorreccionHorario().arreglarHora(minFinal));
+				CorreccionHorario.arreglarHora(hsFinal) + ":"
+						+ CorreccionHorario.arreglarHora(minFinal));
 		getEstadisticaGui().getTxt_Resultado_EstadCantidadDoc().setText(
 				"" + cantidad);
 
@@ -158,8 +164,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		Runnable pintor = new Runnable() {
 			@Override
 			public void run() {
-				// LOG
-				log.info("Inicio Pintor");
+				// log.info("Inicio Pintor");
 				int valorA = 0;
 				int valorB = 0;
 
@@ -174,10 +179,6 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 					if (estado == estadoApp.CORRIENDO) {
 						// contenedorFila.removeAll();
 						dibujarFilaPaciente(sim.getCola().numPacientesEnCola());
-						// contenedorBoxes.repaint();
-						// contenedorFilaPacientes.repaint();
-						// contenedorFila.repaint();
-
 						getSimulGui()
 								.getTxt_ContPacientes()
 								.setText(
@@ -190,7 +191,6 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 								""
 										+ sim.getEstadistica()
 												.getNumPacientesMuertos());
-
 						getSimulGui()
 								.getTxt_PacienteMax()
 								.setText(
@@ -220,19 +220,24 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 						getSimulGui().getBarraTotal().setValue(valorA + valorB);
 
 					} else {
-						// estado Estadistica
+						// Estado Estadistica
+						mostrarEstadistica();
+						getEstadisticaGui().getEstadisticaPopUp().repaint();
+					}
+				}// cuando termina la simulacion
+				while (getEstadoApp() != estadoApp.CONFIGURACION) {
+					if (getEstadoApp() == estadoApp.CORRIENDO) {
+						getSimulGui().getSala().repaint();
+						getSimulGui().getMenu().repaint();
+					} else {
 						mostrarEstadistica();
 						getEstadisticaGui().getEstadisticaPopUp().repaint();
 					}
 				}
-				// cuando termina la simulacion
-				mostrarEstadistica();
-				getEstadisticaGui().getEstadisticaPopUp().repaint();
 			}
 		};
 		poolPintor.execute(pintor);
-		// LOG
-		log.info("Fin Pintor");
+		// log.info("Fin Pintor");
 		poolPintor.shutdown();
 	}
 
@@ -272,17 +277,29 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		getSimulGui().getContenedorBoxes().repaint();
 	}
 
-	/* Fila pacientes */
+	/**
+	 * Fila pacientes Este metodo recibe la cantidad de pacientes que hay en la
+	 * cola y dibuja un paciente por cada uno o un lugar vacio hasta llegar a la
+	 * cantidad maxima que se puede dibujar, siguiendo la forma de la fila en la
+	 * pantalla
+	 * 
+	 * @param cantidad
+	 *            de pacientes
+	 * */
+
 	public void dibujarFilaPaciente(int cantidad) {
 		int posX = 425;
 		int posY = 0;
 
+		// cantidad maxima que se pueden dibujar en la cola de pacientes
 		if (cantidad > 23)
 			cantidad = 23;
+		if (cantidad < 0)// nunca tendria que venir un numero nega
+			cantidad = 0;
 
 		// contenedorFila.removeAll();
 		getSimulGui().getContenedorFilaPacientes().removeAll();
-		log.info("Pacientes en cola: " + cantidad);
+		log.info(IdiomaGui.getPacienteEnColaMsj() + cantidad);
 		for (int i = 0; i < 23; i++) {
 			if (i < cantidad) {
 				dibujarPaciente(posX, posY, config.getIconos()
@@ -290,7 +307,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 			} else {
 				dibujarPaciente(posX, posY, config.getIconos()
 						.getIconPacienteFilaVacio());
-			}
+			}// Curva de la fila en la pantalla
 			if (i < 2) {
 				posY += 50;
 			} else if (i < 10) {
@@ -311,6 +328,13 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		getSimulGui().getContenedorFilaPacientes().repaint();
 	}
 
+	/**
+	 * Dibuja un paciente en la pantalla
+	 * 
+	 * @param posX
+	 * @param posY
+	 * @param icono
+	 */
 	public void dibujarPaciente(int posX, int posY, Icon icono) {
 		JLabel paciente = new JLabel();
 		paciente.setBounds(posX, posY, 35, 43);
@@ -319,12 +343,11 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 	}
 
 	public void mostrarEstadistica() {
-		getEstadisticaGui()
-				.getTxt_Resultado_EstadHoraActual()
+		getEstadisticaGui().getTxt_Resultado_EstadHoraActual()
 				.setText(
-						new CorreccionHorario().arreglarHora(sim.gettInicio() / 60)
+						CorreccionHorario.arreglarHora(sim.gettInicio() / 60)
 								+ ":"
-								+ new CorreccionHorario().arreglarHora(sim
+								+ CorreccionHorario.arreglarHora(sim
 										.gettInicio() % 60));
 		getEstadisticaGui().getTxt_Resultado_EstadPacientesTotales().setText(
 				"" + sim.getEstadistica().getNumPacientesAtendidos());
@@ -340,20 +363,14 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 				"" + sim.getCola().numPacientesEnCola());
 		int esperaPromedio = (int) sim.getEstadistica().esperaPromedio();
 		getEstadisticaGui().getTxt_Resultado_EstadEsperaPromedio().setText(
-				new CorreccionHorario().arreglarHora(esperaPromedio / 60)
-						+ ":"
-						+ new CorreccionHorario()
-								.arreglarHora(esperaPromedio % 60));
+				CorreccionHorario.arreglarHora(esperaPromedio / 60) + ":"
+						+ CorreccionHorario.arreglarHora(esperaPromedio % 60));
 		int tiempoEspera = sim.getEstadistica().getTiempoTotalDeEspera();
 		getEstadisticaGui().getTxt_Resultado_EstadTiempoEsperaTotal().setText(
-				new CorreccionHorario().arreglarHora(tiempoEspera / 60)
-						+ ":"
-						+ new CorreccionHorario()
-								.arreglarHora(tiempoEspera % 60));
+				CorreccionHorario.arreglarHora(tiempoEspera / 60) + ":"
+						+ CorreccionHorario.arreglarHora(tiempoEspera % 60));
 	}
 
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-	// ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	private class Task extends SwingWorker<Integer, Integer> {
 		@Override
 		protected Integer doInBackground() throws Exception {
@@ -367,12 +384,13 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 						minFinal, porcentajeMin);
 			} catch (FileNotFoundException e2) {
 				// LOG
-				log.fatal("Error simulacion abrir archivo: " + e2.getMessage());
+				log.fatal(IdiomaGui.getErrorAlAbrirArchivoSimulacionMsj()
+						+ e2.getMessage());
 			} catch (Throwable e1) {
 				// LOG
-				log.fatal("Error simular: " + e1.getClass());
+				log.fatal(IdiomaGui.getErrorSimularMsj() + e1.getClass());
 			}
-			log.info("Fin de Simulacion");
+			log.info(IdiomaGui.getFinSimulacionMsj());
 			return 0;
 		}
 
@@ -385,30 +403,12 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		protected void done() {
 			if (isCancelled()) {
 				// LOG
-				log.info("DoInBackGround Cancelado");
+				log.info(IdiomaGui.getDoInBackCanceladoMsj());
 			} else {
 				// LOG
-				log.info("DoInBackGround Terminado");
+				log.info(IdiomaGui.getDoInBackTerminadoMsj());
 			}
 		}
-	}
-
-	@Override
-	public void mouseDragged(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void mouseMoved(MouseEvent arg0) {
-		// TODO Auto-generated method stub
-
-	}
-
-	@Override
-	public void actionPerformed(ActionEvent arg0) {
-		// TODO Auto-generated method stub
-
 	}
 
 	public void configurarLogger() {
@@ -426,7 +426,8 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 			}
 		}
 	}
-	public void setearListeners(){
+
+	public void setearListeners() {
 		/**
 		 * El orden de incorporacion de los eventos a cada boton sera:
 		 * 
@@ -436,7 +437,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 		 */
 
 		// 1) El unico boton que tiene es el de Back
-		getLogGui().getBtn_BackLog().addMouseListener(new MouseAdapter() {
+		getLogGui().getBtn_BackLog().addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				if (getEstadoApp() == estadoApp.LOG) {
@@ -444,6 +445,22 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 					getLogGui().getLogPopUp().setVisible(false);
 					setEstadoApp(estadoApp.CONFIGURACION);
 				}
+			}
+
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
 			}
 		});
 
@@ -455,7 +472,7 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 
 		// Agrego Simulacion Botonde Stop y Boton de Estadistica
 
-		getSimulGui().getBtn_Stop().addMouseListener(new MouseAdapter() {
+		getSimulGui().getBtn_Stop().addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				if (getEstadoApp() == estadoApp.CORRIENDO) {
@@ -470,36 +487,85 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 					getSimulGui().getSala().setVisible(false);
 				}
 			}
-		});
-		getSimulGui().getBtn_Estadistica().addMouseListener(new MouseAdapter() {
+
 			@Override
-			public void mouseReleased(MouseEvent e) {
-				if (getEstadoApp() == estadoApp.CORRIENDO) {
-					getEstadisticaGui().getEstadisticaPopUp().setVisible(true);
-					estado = estadoApp.ESTADISTICA;
-				}
+			public void mouseClicked(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
 			}
 		});
+		getSimulGui().getBtn_Estadistica().addMouseListener(
+				new MouseListener() {
+					@Override
+					public void mouseReleased(MouseEvent e) {
+						if (getEstadoApp() == estadoApp.CORRIENDO) {
+							estado = estadoApp.ESTADISTICA;
+							getEstadisticaGui().getEstadisticaPopUp()
+									.setVisible(true);
+						}
+					}
+
+					@Override
+					public void mouseClicked(MouseEvent arg0) {
+					}
+
+					@Override
+					public void mouseEntered(MouseEvent arg0) {
+					}
+
+					@Override
+					public void mouseExited(MouseEvent arg0) {
+					}
+
+					@Override
+					public void mousePressed(MouseEvent arg0) {
+					}
+				});
 		getSimulGui().getContenedorBotones().add(getSimulGui().getBtn_Stop());
 		getSimulGui().getContenedorBotones().add(
 				getSimulGui().getBtn_Estadistica());
 		// Agrego simulacionPopUp a la ventana principal
-
 		getSimulGui().getSala().add(getSimulGui().getContenedorBotones());
 		frmHospital.getContentPane().add(getSimulGui().getSala());
 		frmHospital.getContentPane().add(getSimulGui().getMenu());
 
-		getEstadisticaGui().getBtn_Back().addMouseListener(new MouseAdapter() {
+		getEstadisticaGui().getBtn_Back().addMouseListener(new MouseListener() {
 			@Override
 			public void mouseReleased(MouseEvent e) {
 				if (estado == estadoApp.ESTADISTICA) {
 					getEstadisticaGui().getEstadisticaPopUp().setVisible(false);
 					estado = estadoApp.CORRIENDO;
+					getSimulGui().getSala().setVisible(true);
 				}
 
 			}
-		});
 
+			@Override
+			public void mouseClicked(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mouseExited(MouseEvent arg0) {
+			}
+
+			@Override
+			public void mousePressed(MouseEvent arg0) {
+			}
+		});
 		getEstadisticaGui().getEstadisticaPopUp().add(
 				getEstadisticaGui().getBtn_Back());
 		frmHospital.add(getEstadisticaGui().getEstadisticaPopUp());
@@ -548,29 +614,24 @@ public class GuiHospital implements ActionListener, MouseMotionListener {
 						.getTxt_ConfResultadoPorcentajeMin().getText()) / 100;
 
 				if (getEstadoApp() == estadoApp.CONFIGURACION) {
-					// 24:00 -> 1440
-					// 1439 -> 1439
+					// 24 hs-> 1440 minutos
 					// valido de 0 a 23:59
 					if (0 > hsMin || hsMin > 1439 || 0 > hsMax || hsMax > 1439)// valido
-						// una
-						// hora
-						// valida
 						valido = false;
 					if (hsMin > hsMax)
 						valido = false;
 
 					if (valido) {
-						task1.doTask();// este llama
-						// a la
-						// simulacion
+						task1.doTask();// Llama a la simulacion
 						getConfigGui().getConfiguracionPopUp()
 								.setVisible(false);
 						getSimulGui().getMenu().setVisible(true);
 						getSimulGui().getSala().setVisible(true);
 						actualizarInfoEstatica(cantidadDoc, hsMin, hsMax);// acomoda
 																			// lo
-						// del panel
-						actualizarInfoDinamica();
+																			// del
+																			// panel
+						actualizarInfoDinamica();// actualiza la informacion
 						estado = estadoApp.CORRIENDO;
 					} else {
 						// cartel o focus en los errores

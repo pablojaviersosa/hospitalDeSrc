@@ -1,17 +1,16 @@
 package main.java.com.pablo.simhospital.hospital;
 
-//import java.io.File;
 import java.io.FileNotFoundException;
-//import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
-
 import org.apache.log4j.Logger;
 import main.java.com.pablo.simhospital.cola.Cola;
+import main.java.com.pablo.simhospital.configuracion.Configuracion;
+import main.java.com.pablo.simhospital.configuracion.IdiomaGui;
 import main.java.com.pablo.simhospital.util.NumeroAleatorio.Aleatorio;
 
 /**
@@ -48,7 +47,11 @@ public class Simulacion {
 	public Simulacion(int baseTiempo) {
 		iniciar(baseTiempo);
 	}
-
+	/**
+	 * Inicializacion
+	 * 
+	 * @param baseTiempo de la representacion del minuto en la simulacion
+	 */
 	public void iniciar(int baseTiempo) {
 
 		Simulacion.setBaseMinutoMs(baseTiempo);
@@ -133,7 +136,6 @@ public class Simulacion {
 		while (tInicio < tFin || colaPacientes.isNotEmpty()) {
 			// ACTUALIZAR DATOS
 			// Espero 1' virtual = baseMinutoMs
-
 			Thread.sleep(Simulacion.getBaseMinutoMs());
 			if (tInicio < tFin) {
 				if (Aleatorio.real(0, 1) < porcentaje) {//probabilidad de ingreseo de un paciente a la sala
@@ -144,31 +146,33 @@ public class Simulacion {
 					double[] probsActuales = p.getProbs();
 					double prioridad = Aleatorio.real(0, 1);
 					if (prioridad < probsActuales[0]) {
-						// LOG
-						log.info("Ingreso Paciente Urgencia ALta");
+						log.info(IdiomaGui.getIngresoPacienteAltaMsj());
 						colaPacientes.set(new Paciente(gettInicio(), 0));
 						estadistica.incrementarPacientesAtendidosAlta();
 					} else if (probsActuales[0] < prioridad
 							&& prioridad < (probsActuales[0] + probsActuales[1])) {
+						Configuracion.getIdioma();
 						// LOG
-						log.info("Ingreso Paciente Urgencia Media");
+						log.info(IdiomaGui.getIngresoPacienteMediaMsj());
 						colaPacientes.set(new Paciente(gettInicio(), 1));
 						estadistica.incrementarPacientesAtendidosMedia();
 					} else {
+						Configuracion.getIdioma();
 						// LOG
-						log.info("Ingreso Paciente Urgencia Baja");
+						log.info(IdiomaGui.getIngresoPacienteBajaMsj());
 						colaPacientes.set(new Paciente(gettInicio(), 2));
 						estadistica.incrementarPacientesAtendidosBaja();
 					}
+					Configuracion.getIdioma();
 					// LOG
-					log.info("Paciente en Cola:"
+					log.info(IdiomaGui.getPacienteEnColaMsj()
 							+ colaPacientes.numPacientesEnCola());
 				}
 			}
 			incrementarTinicio();
 		}
 		// LOG
-		log.info("Termino aplicacion");
+		log.info(IdiomaGui.getFinSimulacionMsj());
 		// Estadisticas
 		estadisticasClientes();
 		poolDeDoctores.shutdown();
@@ -184,16 +188,16 @@ public class Simulacion {
 			log.info("Periodo " + periodos.get(i).getHoraInicio() + " - "
 					+ periodos.get(i).getHoraTermino());
 		}
-		log.info("Numero total de pacientes: "
+		log.info(IdiomaGui.getNumeroTotalPacientesMsj()
 				+ this.estadistica.getNumPacientesAtendidos());
-		log.info("Numero pacientes Urgencia Alta: "
+		log.info(IdiomaGui.getNumeroPacientesUrgenciaAltaMsj()
 				+ this.estadistica.getPacientesAtendidosAlta());
-		log.info("Numero pacientes Urgencia Media: "
+		log.info(IdiomaGui.getNumeroPacientesUrgenciaMediaMsj()
 				+ this.estadistica.getPacientesAtendidosMedia());
-		log.info("Numero pacientes Urgencia Baja: "
+		log.info(IdiomaGui.getNumeroPacientesUrgenciaBajaMsj()
 				+ this.estadistica.getPacientesAtendidosBaja());
-		log.info("Espera Promedio: " + this.estadistica.esperaPromedio());
-		log.info("Cantidad total de pacientes: "
+		log.info(IdiomaGui.getEsperaPromedioMsj() + this.estadistica.esperaPromedio());
+		log.info(IdiomaGui.getNumeroTotalPacientesMsj()
 				+ this.estadistica.getNumPacientesAtendidos());
 		log.info("-------------------");
 	}
@@ -275,7 +279,7 @@ public class Simulacion {
 				if (!poolDeDoctores.awaitTermination(1, TimeUnit.SECONDS)) {
 					poolDeDoctores.shutdownNow();
 					if (!poolDeDoctores.awaitTermination(1, TimeUnit.SECONDS))
-						System.err.println("poolDeDoctores did not terminate");
+						System.err.println(IdiomaGui.getErrorPoolDeDoctoresNoTerminaMsj());
 				}
 			} catch (InterruptedException ie) {
 				poolDeDoctores.shutdownNow();

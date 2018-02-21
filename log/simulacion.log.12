@@ -1,0 +1,3388 @@
+
+2018-02-20/03:21:09.822 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/03:21:09.823 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:21:09.893 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:21:09.904 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:09.904 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:21:09.904 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:21:09.949 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:09.949 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:21:09.949 [INFO ] Paciente en Cola:9
+
+2018-02-20/03:21:09.990 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:09.990 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:21:09.990 [INFO ] Paciente en Cola:10
+
+2018-02-20/03:21:10.041 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:10.071 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:10.072 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:21:10.072 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:10.158 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:10.197 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:10.198 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:21:10.198 [INFO ] Paciente en Cola:12
+
+2018-02-20/03:21:10.286 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:10.309 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:10.321 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:10.321 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:21:10.322 [INFO ] Paciente en Cola:12
+
+2018-02-20/03:21:10.362 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:10.363 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:21:10.363 [INFO ] Paciente en Cola:13
+
+2018-02-20/03:21:10.376 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:21:10.416 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:21:10.416 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:21:10.417 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:10.423 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:21:10.425 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:21:10.429 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:10.444 [INFO ] Termino aplicacion
+
+2018-02-20/03:21:10.445 [INFO ] Periodo 07:00 - 07:40
+
+2018-02-20/03:21:10.445 [INFO ] Periodo 07:40 - 10:22
+
+2018-02-20/03:21:10.446 [INFO ] Periodo 10:23 - 14:42
+
+2018-02-20/03:21:10.446 [INFO ] Periodo 14:43 - 18:00
+
+2018-02-20/03:21:10.446 [INFO ] Numero total de pacientes: 7
+
+2018-02-20/03:21:10.447 [INFO ] Numero pacientes Urgencia Alta: 19
+
+2018-02-20/03:21:10.447 [INFO ] Numero pacientes Urgencia Media: 0
+
+2018-02-20/03:21:10.447 [INFO ] Numero pacientes Urgencia Baja: 0
+
+2018-02-20/03:21:10.458 [INFO ] Espera Promedio: 6.428571428571429
+
+2018-02-20/03:21:10.459 [INFO ] Cantidad total de pacientes: 7
+
+2018-02-20/03:21:10.460 [INFO ] -------------------
+
+2018-02-20/03:21:10.460 [INFO ] Fin de Simulacion
+
+2018-02-20/03:21:11.408 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:21:11.410 [INFO ] Doctor 1 termino atención.
+
+2018-02-20/03:21:11.409 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:21:11.413 [INFO ] Doctor 3 termino atención.
+
+2018-02-20/03:21:11.409 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:21:11.415 [INFO ] Doctor 4 termino atención.
+
+2018-02-20/03:21:11.409 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:21:11.417 [INFO ] Doctor 2 termino atención.
+
+2018-02-20/03:21:11.408 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:21:11.419 [INFO ] Doctor 0 termino atención.
+
+2018-02-20/03:21:11.435 [INFO ] DoInBackGround Terminado
+
+2018-02-20/03:21:52.903 [INFO ] Fin Pintor
+
+2018-02-20/03:21:52.910 [INFO ] Inicio Pintor
+
+2018-02-20/03:21:52.965 [INFO ] Carga Archivo de Urgencias Cantidad de periodos: 4
+
+2018-02-20/03:21:52.966 [INFO ] Comienza Simulación
+
+2018-02-20/03:21:52.966 [INFO ] T inicio: 360
+
+2018-02-20/03:21:52.967 [INFO ] T fin   : 1080
+
+2018-02-20/03:21:52.972 [INFO ] Ejecuta los Doctores: 5
+
+2018-02-20/03:21:52.983 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:21:52.991 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:21:52.996 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:52.996 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:21:52.997 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:21:53.011 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.074 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:53.077 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:21:53.077 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:21:53.078 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:53.078 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:21:53.078 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:21:53.077 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:53.079 [INFO ] Paciente en Cola:0
+
+2018-02-20/03:21:53.160 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.282 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:53.284 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:21:53.284 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:21:53.284 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:21:53.286 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:53.286 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:21:53.284 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:21:53.337 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.465 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.601 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.689 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:53.690 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:21:53.690 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:21:53.690 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:21:53.690 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:53.691 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:21:53.727 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.811 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:53.812 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:21:53.812 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:21:53.812 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:21:53.813 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:21:53.847 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:53.978 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:21:54.014 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.015 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/03:21:54.015 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:21:54.015 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:21:54.055 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.056 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:21:54.057 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:21:54.094 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:21:54.178 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:54.179 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:54.179 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:21:54.207 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:21:54.326 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:21:54.427 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.427 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:21:54.428 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:21:54.439 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:21:54.460 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:54.554 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:21:54.592 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.593 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:21:54.593 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:21:54.633 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.634 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:21:54.634 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:21:54.678 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:21:54.744 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:21:54.815 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:21:54.919 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:54.920 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:21:54.920 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:21:54.925 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:21:55.048 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:21:55.178 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:21:55.230 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:21:55.244 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:55.244 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:21:55.245 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:21:55.288 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:21:55.313 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:21:55.366 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:55.366 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:21:55.367 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:21:55.408 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:55.408 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:55.409 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:21:55.423 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:21:55.545 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:21:55.651 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:55.651 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:55.652 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:21:55.674 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:21:55.808 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:21:55.833 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:21:55.854 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:55.855 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:55.855 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:21:55.946 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:21:56.071 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:21:56.195 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:21:56.294 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:56.317 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:21:56.341 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:21:56.341 [DEBUG] Urgencia Media - tiempo de vida: 251
+
+2018-02-20/03:21:56.341 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:21:56.426 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:21:56.503 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:56.504 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:56.504 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:21:56.545 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:21:56.545 [DEBUG] Urgencia Media - tiempo de vida: 357
+
+2018-02-20/03:21:56.546 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:21:56.547 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:21:56.664 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:21:56.707 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:56.708 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:56.709 [INFO ] Paciente en Cola:9
+
+2018-02-20/03:21:56.749 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:56.750 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:56.750 [INFO ] Paciente en Cola:10
+
+2018-02-20/03:21:56.770 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:56.790 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:56.791 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:56.791 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:56.878 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:56.985 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:56.995 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:56.995 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:21:56.995 [INFO ] Paciente en Cola:12
+
+2018-02-20/03:21:57.062 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:21:57.062 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:21:57.093 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:57.214 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:57.333 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:57.361 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:57.362 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:57.362 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:57.425 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:21:57.442 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:57.552 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:57.553 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:57.627 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:21:57.660 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:21:57.778 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:21:57.852 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:57.852 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:57.853 [INFO ] Paciente en Cola:9
+
+2018-02-20/03:21:57.892 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.019 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.133 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.240 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.348 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.472 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:58.502 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:21:58.502 [DEBUG] Urgencia Media - tiempo de vida: 336
+
+2018-02-20/03:21:58.503 [INFO ] Paciente en Cola:10
+
+2018-02-20/03:21:58.586 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:58.672 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:58.673 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:58.673 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:58.710 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:58.852 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:21:58.865 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:58.875 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:58.876 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:58.876 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:58.973 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:21:59.005 [INFO ] Pacientes en cola: 10
+
+2018-02-20/03:21:59.008 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:21:59.121 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:21:59.171 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:21:59.171 [DEBUG] Urgencia Media - tiempo de vida: 346
+
+2018-02-20/03:21:59.171 [INFO ] Paciente en Cola:10
+
+2018-02-20/03:21:59.212 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:59.212 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:59.212 [INFO ] Paciente en Cola:11
+
+2018-02-20/03:21:59.231 [INFO ] Pacientes en cola: 11
+
+2018-02-20/03:21:59.294 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:59.294 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:59.294 [INFO ] Paciente en Cola:12
+
+2018-02-20/03:21:59.371 [INFO ] Pacientes en cola: 12
+
+2018-02-20/03:21:59.502 [INFO ] Pacientes en cola: 12
+
+2018-02-20/03:21:59.543 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:59.543 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:59.544 [INFO ] Paciente en Cola:13
+
+2018-02-20/03:21:59.584 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:21:59.585 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:21:59.585 [INFO ] Paciente en Cola:14
+
+2018-02-20/03:21:59.586 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:21:59.616 [INFO ] Pacientes en cola: 13
+
+2018-02-20/03:21:59.742 [INFO ] Pacientes en cola: 13
+
+2018-02-20/03:21:59.851 [INFO ] Pacientes en cola: 13
+
+2018-02-20/03:21:59.870 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:21:59.914 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:59.915 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:21:59.915 [INFO ] Paciente en Cola:13
+
+2018-02-20/03:21:59.956 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:21:59.957 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:21:59.957 [INFO ] Paciente en Cola:14
+
+2018-02-20/03:21:59.959 [INFO ] Pacientes en cola: 14
+
+2018-02-20/03:22:00.076 [INFO ] Pacientes en cola: 14
+
+2018-02-20/03:22:00.185 [INFO ] Pacientes en cola: 14
+
+2018-02-20/03:22:00.242 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:00.242 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:00.243 [INFO ] Paciente en Cola:15
+
+2018-02-20/03:22:00.323 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:00.324 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:00.324 [INFO ] Paciente en Cola:16
+
+2018-02-20/03:22:00.456 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:00.496 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:00.617 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:00.617 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:00.617 [INFO ] Paciente en Cola:15
+
+2018-02-20/03:22:00.699 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:00.700 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:00.700 [INFO ] Paciente en Cola:16
+
+2018-02-20/03:22:00.740 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:00.741 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:00.741 [INFO ] Paciente en Cola:17
+
+2018-02-20/03:22:00.821 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:01.148 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:01.148 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:01.149 [INFO ] Paciente en Cola:17
+
+2018-02-20/03:22:01.229 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:01.230 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:01.230 [INFO ] Paciente en Cola:18
+
+2018-02-20/03:22:01.269 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:01.313 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:01.313 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:01.313 [INFO ] Paciente en Cola:18
+
+2018-02-20/03:22:01.436 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:01.598 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:01.599 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:01.599 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:01.599 [INFO ] Paciente en Cola:17
+
+2018-02-20/03:22:01.842 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:01.842 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:01.842 [INFO ] Paciente en Cola:18
+
+2018-02-20/03:22:02.005 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:02.086 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:02.086 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:02.086 [INFO ] Paciente en Cola:18
+
+2018-02-20/03:22:02.210 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:02.210 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:02.211 [INFO ] Paciente en Cola:19
+
+2018-02-20/03:22:02.251 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:02.252 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:02.252 [INFO ] Paciente en Cola:20
+
+2018-02-20/03:22:02.542 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:02.542 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:02.542 [INFO ] Paciente en Cola:21
+
+2018-02-20/03:22:02.662 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:02.746 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:02.747 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:02.747 [INFO ] Paciente en Cola:21
+
+2018-02-20/03:22:02.868 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:02.869 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:02.869 [INFO ] Paciente en Cola:22
+
+2018-02-20/03:22:02.945 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:02.991 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:02.992 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:02.992 [INFO ] Paciente en Cola:22
+
+2018-02-20/03:22:02.992 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:03.281 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:03.281 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:03.281 [INFO ] Paciente en Cola:22
+
+2018-02-20/03:22:03.322 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:03.322 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:03.323 [INFO ] Paciente en Cola:23
+
+2018-02-20/03:22:03.485 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:03.528 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:03.568 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:03.569 [DEBUG] Urgencia Media - tiempo de vida: 264
+
+2018-02-20/03:22:03.569 [INFO ] Paciente en Cola:22
+
+2018-02-20/03:22:03.691 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:03.691 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:03.692 [INFO ] Paciente en Cola:23
+
+2018-02-20/03:22:03.815 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:03.816 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:03.816 [INFO ] Paciente en Cola:24
+
+2018-02-20/03:22:04.019 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:04.020 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:04.021 [INFO ] Paciente en Cola:25
+
+2018-02-20/03:22:04.057 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:04.102 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:04.102 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:04.102 [INFO ] Paciente en Cola:25
+
+2018-02-20/03:22:04.216 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:04.382 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:04.560 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:04.561 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:04.561 [INFO ] Paciente en Cola:24
+
+2018-02-20/03:22:04.601 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:04.602 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:04.602 [INFO ] Paciente en Cola:25
+
+2018-02-20/03:22:04.731 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:04.732 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:04.733 [INFO ] Paciente en Cola:26
+
+2018-02-20/03:22:04.837 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:05.082 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:05.270 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:05.270 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:05.270 [INFO ] Paciente en Cola:25
+
+2018-02-20/03:22:05.432 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:05.433 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:05.433 [INFO ] Paciente en Cola:26
+
+2018-02-20/03:22:05.470 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:05.583 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:05.682 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:05.682 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:05.682 [INFO ] Paciente en Cola:27
+
+2018-02-20/03:22:05.710 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:05.835 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:05.847 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:05.848 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:05.848 [INFO ] Paciente en Cola:28
+
+2018-02-20/03:22:05.961 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.011 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:06.012 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/03:22:06.012 [INFO ] Paciente en Cola:29
+
+2018-02-20/03:22:06.089 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.188 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:06.201 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.308 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.337 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:06.338 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:06.338 [INFO ] Paciente en Cola:29
+
+2018-02-20/03:22:06.338 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:06.351 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:06.378 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:06.378 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:06.379 [INFO ] Paciente en Cola:28
+
+2018-02-20/03:22:06.391 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:06.414 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.521 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.622 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:06.623 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:06.623 [INFO ] Paciente en Cola:28
+
+2018-02-20/03:22:06.627 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.665 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:06.665 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:06.666 [INFO ] Paciente en Cola:29
+
+2018-02-20/03:22:06.718 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:06.738 [INFO ] Pacientes en cola: 23
+
+2018-02-20/03:22:06.870 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:06.873 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:06.873 [INFO ] Termino aplicacion
+
+2018-02-20/03:22:06.873 [INFO ] Periodo 07:00 - 07:40
+
+2018-02-20/03:22:06.873 [INFO ] Periodo 07:40 - 10:22
+
+2018-02-20/03:22:06.874 [INFO ] Periodo 10:23 - 14:42
+
+2018-02-20/03:22:06.874 [INFO ] Periodo 14:43 - 18:00
+
+2018-02-20/03:22:06.874 [INFO ] Numero total de pacientes: 43
+
+2018-02-20/03:22:06.874 [INFO ] Numero pacientes Urgencia Alta: 35
+
+2018-02-20/03:22:06.875 [INFO ] Numero pacientes Urgencia Media: 5
+
+2018-02-20/03:22:06.875 [INFO ] Numero pacientes Urgencia Baja: 31
+
+2018-02-20/03:22:06.878 [INFO ] Espera Promedio: 37.93023255813954
+
+2018-02-20/03:22:06.879 [INFO ] Cantidad total de pacientes: 43
+
+2018-02-20/03:22:06.879 [INFO ] -------------------
+
+2018-02-20/03:22:06.879 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:06.881 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:06.881 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:06.882 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:06.881 [INFO ] Fin de Simulacion
+
+2018-02-20/03:22:06.977 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:07.851 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:07.852 [INFO ] Doctor 0 termino atención.
+
+2018-02-20/03:22:07.852 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:07.853 [INFO ] Doctor 4 termino atención.
+
+2018-02-20/03:22:07.853 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:07.854 [INFO ] Doctor 1 termino atención.
+
+2018-02-20/03:22:07.851 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:07.856 [INFO ] Doctor 2 termino atención.
+
+2018-02-20/03:22:07.853 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:07.857 [INFO ] Doctor 3 termino atención.
+
+2018-02-20/03:22:07.868 [INFO ] DoInBackGround Terminado
+
+2018-02-20/03:22:13.400 [INFO ] Carga Archivo de Urgencias Cantidad de periodos: 4
+
+2018-02-20/03:22:13.401 [INFO ] Comienza Simulación
+
+2018-02-20/03:22:13.402 [INFO ] T inicio: 360
+
+2018-02-20/03:22:13.402 [INFO ] T fin   : 1080
+
+2018-02-20/03:22:13.402 [INFO ] Ejecuta los Doctores: 7
+
+2018-02-20/03:22:13.403 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:13.404 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:13.405 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:13.406 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:13.407 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:13.408 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:13.408 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:13.413 [INFO ] Fin Pintor
+
+2018-02-20/03:22:13.414 [INFO ] Inicio Pintor
+
+2018-02-20/03:22:13.449 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:13.449 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:13.450 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:13.450 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:13.451 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:13.451 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:13.452 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:13.452 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:13.452 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:13.453 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:13.531 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:13.532 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:13.532 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:13.533 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:13.533 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:13.533 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:13.534 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:13.536 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:13.536 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:13.549 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:13.573 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:13.573 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:13.573 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:13.574 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:13.574 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:13.574 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:13.575 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:13.578 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:13.693 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:13.802 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:13.817 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:13.818 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:13.818 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:13.818 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:13.818 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:13.819 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:13.819 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:13.925 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.054 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.176 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.230 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:14.235 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:14.236 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:14.237 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:14.237 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:14.237 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:14.287 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.398 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.399 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:14.399 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/03:22:14.400 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:14.400 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:14.400 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:14.525 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.609 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:14.609 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:14.610 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:14.610 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:14.640 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:14.731 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:14.732 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:14.732 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:14.751 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:14.857 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:14.893 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:14.894 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:22:14.894 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:14.964 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:15.009 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:15.071 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:15.182 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:15.290 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:15.302 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:15.302 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:15.302 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:15.396 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:15.506 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:15.586 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:15.628 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:15.635 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:15.741 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:15.849 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:15.872 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:15.873 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:15.873 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:15.957 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:16.074 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:16.075 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:16.075 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:16.080 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:16.113 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:16.113 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:16.156 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:16.196 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:16.197 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:16.197 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.197 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:16.197 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:16.237 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:16.310 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.431 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.545 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.560 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:16.659 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.768 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:16.768 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:16.769 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:16.769 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:16.769 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:16.776 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:16.810 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:16.811 [DEBUG] Urgencia Media - tiempo de vida: 523
+
+2018-02-20/03:22:16.811 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:16.812 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:16.851 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:16.852 [DEBUG] Urgencia Media - tiempo de vida: 321
+
+2018-02-20/03:22:16.852 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:16.876 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:16.971 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:16.984 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.014 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:17.091 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.134 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:17.135 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:17.136 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:17.136 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:17.207 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.322 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.338 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:17.338 [DEBUG] Urgencia Media - tiempo de vida: 266
+
+2018-02-20/03:22:17.338 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:17.430 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:17.539 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:17.539 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:17.540 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:17.540 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:17.540 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:17.621 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:17.647 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.705 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:17.754 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.861 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.970 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:17.991 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:17.991 [DEBUG] Urgencia Media - tiempo de vida: 195
+
+2018-02-20/03:22:17.992 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:17.992 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:18.078 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:18.110 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:18.153 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:18.154 [DEBUG] Urgencia Media - tiempo de vida: 309
+
+2018-02-20/03:22:18.154 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:18.154 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:18.185 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:18.294 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:18.392 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:18.438 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:18.438 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:22:18.438 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:18.439 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:18.519 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:18.520 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:18.520 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:18.639 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:18.682 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:18.683 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:18.683 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:18.725 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:18.725 [DEBUG] Urgencia Media - tiempo de vida: 210
+
+2018-02-20/03:22:18.725 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:18.762 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:18.765 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:18.766 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:18.766 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:18.890 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:18.890 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:18.890 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:18.931 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:18.931 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:18.931 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:18.972 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:18.972 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:18.972 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:19.254 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:19.255 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:19.255 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:19.296 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:19.296 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:22:19.296 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:19.341 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:19.368 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:19.460 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:19.460 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:19.460 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:19.529 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:19.569 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:19.703 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:19.703 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:19.704 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:19.785 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:19.785 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:19.785 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:20.220 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:20.222 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:20.277 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:20.277 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:20.277 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:20.320 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:20.320 [DEBUG] Urgencia Media - tiempo de vida: 534
+
+2018-02-20/03:22:20.320 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:20.344 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:20.361 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:20.361 [DEBUG] Urgencia Media - tiempo de vida: 359
+
+2018-02-20/03:22:20.362 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:20.403 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:20.580 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:20.580 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:20.581 [DEBUG] Urgencia Media - tiempo de vida: 290
+
+2018-02-20/03:22:20.581 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:20.720 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:20.720 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:20.720 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:20.927 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/03:22:20.927 [DEBUG] Urgencia Media - tiempo de vida: 542
+
+2018-02-20/03:22:20.927 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:20.968 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:20.968 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:20.968 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:22:21.142 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:21.437 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:21.477 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:21.477 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:21.478 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:21.639 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:21.680 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:21.680 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:21.680 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:21.721 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:21.842 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:22.086 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:22.093 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:22.094 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:22.094 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:22.509 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:22.590 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:22.591 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:22.591 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:22.632 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:22.633 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:22.633 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:22.671 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:22.875 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:22.875 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:22.875 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:22.913 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:22.916 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:22.953 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:22.953 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:23.477 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:23.522 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:23.764 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:23.845 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:23.845 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:23.845 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:23.846 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:24.082 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:24.170 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:24.170 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:24.170 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:24.171 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:24.540 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:24.540 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:24.540 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:24.702 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:24.824 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:25.028 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:25.108 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:25.109 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:25.109 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:25.109 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:25.110 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:25.229 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:25.270 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:25.271 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:25.271 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:25.271 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:25.271 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:25.336 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:25.341 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:25.716 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:25.716 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:25.717 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:25.717 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:25.717 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:25.717 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:25.878 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:25.878 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:25.878 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:25.878 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:25.879 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:26.039 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:26.079 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:26.080 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:26.080 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:26.080 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:26.080 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:26.159 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:26.321 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:26.402 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:26.402 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:26.402 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:26.406 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:26.406 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:26.406 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:26.685 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:26.685 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:26.685 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:26.686 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:26.686 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:26.847 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:26.848 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/03:22:26.848 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:26.848 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:26.969 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:26.969 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:26.970 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:27.132 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:27.132 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:27.132 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:27.336 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:27.398 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:27.500 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:27.501 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:27.501 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:27.685 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:27.789 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:27.789 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/03:22:27.789 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:27.910 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:27.910 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:27.910 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:27.951 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:27.951 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:27.951 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:28.071 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:28.072 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:28.073 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:28.073 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:28.111 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:28.235 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:28.276 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:28.356 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:28.357 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:28.357 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:28.602 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:28.602 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:28.602 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:28.889 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:28.929 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:28.929 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:28.930 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:28.930 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:29.012 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:29.013 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:29.013 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:29.053 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:29.053 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:29.054 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:29.222 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:29.252 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:29.336 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:29.336 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/03:22:29.336 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:29.417 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:29.454 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:29.608 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:29.667 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:29.717 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:29.790 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:29.824 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:29.942 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:29.953 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:29.953 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:29.953 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:29.953 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:29.954 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:29.954 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:30.056 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.167 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.243 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.243 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:30.244 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:30.244 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:30.244 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:30.279 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.396 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.517 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.622 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.623 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:30.623 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:30.624 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:30.633 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:30.705 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.705 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/03:22:30.705 [INFO ] Paciente en Cola:1
+
+2018-02-20/03:22:30.750 [INFO ] Pacientes en cola: 1
+
+2018-02-20/03:22:30.786 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.786 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:30.787 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:30.828 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.828 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:30.828 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:30.857 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:30.868 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.869 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/03:22:30.869 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:30.910 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:30.910 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:30.950 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:30.950 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:30.950 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:30.965 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:31.085 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:31.115 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:31.193 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.306 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.316 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:31.317 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:31.317 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:31.398 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:31.413 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.480 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:31.519 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:31.520 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:31.520 [INFO ] Paciente en Cola:2
+
+2018-02-20/03:22:31.528 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.644 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.751 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:31.805 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:31.805 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:31.806 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:31.846 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:31.846 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:31.847 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:31.855 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:31.927 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:31.964 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.049 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:32.050 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:32.050 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:32.071 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:32.170 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:32.177 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.284 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.391 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.498 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.533 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:32.534 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:32.534 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:32.574 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:32.605 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:32.615 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:32.615 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/03:22:32.615 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:32.656 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:32.657 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:32.711 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:32.816 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:32.923 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:32.938 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:32.938 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:32.938 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:33.029 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:33.098 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:33.134 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:33.249 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:33.374 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:33.483 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:33.552 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:33.553 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:33.553 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:33.590 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:33.699 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:33.756 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:33.796 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:33.796 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:33.797 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:33.808 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:33.915 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:33.958 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:33.998 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:33.998 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:33.998 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:34.022 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:34.080 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:34.128 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:34.232 [INFO ] Pacientes en cola: 2
+
+2018-02-20/03:22:34.241 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:34.242 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:34.242 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:34.341 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:34.439 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:34.444 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:34.444 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:34.444 [INFO ] Paciente en Cola:3
+
+2018-02-20/03:22:34.449 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:34.525 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:34.525 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:34.526 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:34.554 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:34.561 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:34.662 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:34.687 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:34.687 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/03:22:34.687 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:34.764 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:34.768 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:34.768 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:34.768 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:34.783 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:34.809 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:34.809 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:34.809 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:34.891 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:34.927 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:34.970 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:34.971 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:34.971 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:34.997 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:35.103 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:35.210 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:35.235 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:35.235 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:35.235 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:35.235 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:35.340 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:35.357 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:35.441 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:35.446 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:35.554 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:35.598 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:35.599 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:35.599 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:35.661 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:35.722 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:35.766 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:35.872 [INFO ] Pacientes en cola: 3
+
+2018-02-20/03:22:35.924 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:35.924 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/03:22:35.925 [INFO ] Paciente en Cola:4
+
+2018-02-20/03:22:35.976 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:36.081 [INFO ] Pacientes en cola: 4
+
+2018-02-20/03:22:36.088 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:36.089 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:36.089 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:36.130 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/03:22:36.169 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:36.170 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/03:22:36.170 [INFO ] Paciente en Cola:5
+
+2018-02-20/03:22:36.188 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:36.210 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:36.210 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/03:22:36.210 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:36.293 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:36.398 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:36.504 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:36.505 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:36.505 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/03:22:36.505 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:36.546 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:36.546 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/03:22:36.546 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:22:36.610 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:22:36.629 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:36.629 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:36.629 [INFO ] Paciente en Cola:9
+
+2018-02-20/03:22:36.717 [INFO ] Pacientes en cola: 9
+
+2018-02-20/03:22:36.753 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/03:22:36.753 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/03:22:36.753 [INFO ] Paciente en Cola:10
+
+2018-02-20/03:22:36.819 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/03:22:36.819 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:36.822 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:22:36.927 [INFO ] Pacientes en cola: 8
+
+2018-02-20/03:22:36.980 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/03:22:36.981 [INFO ] 	Doctor 5	Atiende Paciente
+
+2018-02-20/03:22:36.980 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:36.999 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:36.999 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:36.999 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:37.031 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:37.137 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:37.241 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:37.347 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:37.428 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/03:22:37.454 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:37.559 [INFO ] Pacientes en cola: 5
+
+2018-02-20/03:22:37.572 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:37.573 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/03:22:37.573 [INFO ] Paciente en Cola:6
+
+2018-02-20/03:22:37.667 [INFO ] Pacientes en cola: 6
+
+2018-02-20/03:22:37.735 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:37.736 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/03:22:37.736 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:37.776 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:22:37.883 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:22:37.898 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:37.898 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/03:22:37.898 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:22:37.915 [INFO ] 	Doctor 6	Atiende Paciente
+
+2018-02-20/03:22:37.915 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/03:22:37.939 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:37.939 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/03:22:37.939 [INFO ] Paciente en Cola:7
+
+2018-02-20/03:22:37.990 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:22:38.094 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:22:38.199 [INFO ] Pacientes en cola: 7
+
+2018-02-20/03:22:38.264 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/03:22:38.265 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/03:22:38.265 [INFO ] Paciente en Cola:8
+
+2018-02-20/03:22:38.303 [INFO ] Pacientes en cola: 0
+
+2018-02-20/03:22:38.305 [INFO ] Termino aplicacion
+
+2018-02-20/03:22:38.305 [INFO ] Periodo 07:00 - 07:40
+
+2018-02-20/03:22:38.305 [INFO ] Periodo 07:40 - 10:22
+
+2018-02-20/03:22:38.305 [INFO ] Periodo 10:23 - 14:42
+
+2018-02-20/03:22:38.305 [INFO ] Periodo 14:43 - 18:00
+
+2018-02-20/03:22:38.306 [INFO ] Numero total de pacientes: 105
+
+2018-02-20/03:22:38.306 [INFO ] Numero pacientes Urgencia Alta: 75
+
+2018-02-20/03:22:38.306 [INFO ] Numero pacientes Urgencia Media: 10
+
+2018-02-20/03:22:38.306 [INFO ] Numero pacientes Urgencia Baja: 28
+
+2018-02-20/03:22:38.306 [INFO ] Espera Promedio: 11.457142857142857
+
+2018-02-20/03:22:38.306 [INFO ] Cantidad total de pacientes: 105
+
+2018-02-20/03:22:38.306 [INFO ] -------------------
+
+2018-02-20/03:22:38.306 [INFO ] Fin de Simulacion
+
+2018-02-20/03:22:38.326 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/03:22:38.326 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/03:22:38.326 [INFO ] Doctor 5 espera Pacientes
+
+2018-02-20/03:22:38.326 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/03:22:38.328 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/03:22:38.328 [INFO ] Doctor 6 espera Pacientes
+
+2018-02-20/03:22:38.328 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/03:22:39.296 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.296 [INFO ] Doctor 0 termino atención.
+
+2018-02-20/03:22:39.297 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.299 [INFO ] Doctor 5 termino atención.
+
+2018-02-20/03:22:39.299 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.299 [INFO ] Doctor 2 termino atención.
+
+2018-02-20/03:22:39.296 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.303 [INFO ] Doctor 4 termino atención.
+
+2018-02-20/03:22:39.301 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.303 [INFO ] Doctor 1 termino atención.
+
+2018-02-20/03:22:39.301 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.303 [INFO ] Doctor 6 termino atención.
+
+2018-02-20/03:22:39.299 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/03:22:39.303 [INFO ] Doctor 3 termino atención.
+
+2018-02-20/03:22:39.312 [INFO ] DoInBackGround Terminado
+
+2018-02-20/04:07:00.510 [INFO ] Carga Archivo de Urgencias Cantidad de periodos: 4
+
+2018-02-20/04:07:00.517 [INFO ] Comienza Simulación
+
+2018-02-20/04:07:00.517 [INFO ] T inicio: 360
+
+2018-02-20/04:07:00.518 [INFO ] T fin   : 1080
+
+2018-02-20/04:07:00.521 [INFO ] Ejecuta los Doctores: 5
+
+2018-02-20/04:07:00.521 [INFO ] Fin Pintor
+
+2018-02-20/04:07:00.528 [INFO ] Inicio Pintor
+
+2018-02-20/04:07:00.540 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/04:07:00.541 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:00.546 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:00.547 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/04:07:00.547 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:00.632 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:00.673 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:00.676 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/04:07:00.676 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:00.677 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:00.677 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/04:07:00.678 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:00.678 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:00.680 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/04:07:00.753 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:00.891 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.043 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:01.044 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:01.044 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:01.045 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:01.045 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:01.046 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:01.046 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/04:07:01.054 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.200 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.288 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:01.289 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/04:07:01.289 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:01.290 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:01.290 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:01.290 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:01.344 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.483 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.491 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:01.493 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:01.493 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:01.496 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:01.496 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:01.611 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:01.614 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:01.615 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:01.616 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:01.616 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:01.737 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:01.738 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/04:07:01.738 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:01.758 [INFO ] Pacientes en cola: 1
+
+2018-02-20/04:07:01.890 [INFO ] Pacientes en cola: 1
+
+2018-02-20/04:07:02.054 [INFO ] Pacientes en cola: 1
+
+2018-02-20/04:07:02.171 [INFO ] Pacientes en cola: 1
+
+2018-02-20/04:07:02.223 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:02.224 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/04:07:02.224 [INFO ] Paciente en Cola:2
+
+2018-02-20/04:07:02.318 [INFO ] Pacientes en cola: 2
+
+2018-02-20/04:07:02.438 [INFO ] Pacientes en cola: 2
+
+2018-02-20/04:07:02.466 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:02.467 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:02.467 [INFO ] Paciente en Cola:3
+
+2018-02-20/04:07:02.473 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:02.508 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:02.509 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:02.509 [INFO ] Paciente en Cola:3
+
+2018-02-20/04:07:02.557 [INFO ] Pacientes en cola: 3
+
+2018-02-20/04:07:02.625 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:02.674 [INFO ] Pacientes en cola: 2
+
+2018-02-20/04:07:02.675 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:02.676 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/04:07:02.676 [INFO ] Paciente en Cola:3
+
+2018-02-20/04:07:02.790 [INFO ] Pacientes en cola: 3
+
+2018-02-20/04:07:02.843 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:02.843 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:02.843 [INFO ] Paciente en Cola:4
+
+2018-02-20/04:07:02.885 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:02.886 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:02.886 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:02.914 [INFO ] Pacientes en cola: 5
+
+2018-02-20/04:07:02.968 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:02.969 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:02.969 [INFO ] Paciente en Cola:6
+
+2018-02-20/04:07:03.048 [INFO ] Pacientes en cola: 6
+
+2018-02-20/04:07:03.050 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:03.050 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:03.051 [INFO ] Paciente en Cola:7
+
+2018-02-20/04:07:03.091 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:03.092 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:03.092 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:03.128 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:03.186 [INFO ] Pacientes en cola: 7
+
+2018-02-20/04:07:03.214 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:03.214 [DEBUG] Urgencia Media - tiempo de vida: 369
+
+2018-02-20/04:07:03.215 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:03.281 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:03.301 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:03.321 [INFO ] Pacientes en cola: 6
+
+2018-02-20/04:07:03.419 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:03.419 [DEBUG] Urgencia Media - tiempo de vida: 283
+
+2018-02-20/04:07:03.419 [INFO ] Paciente en Cola:7
+
+2018-02-20/04:07:03.447 [INFO ] Pacientes en cola: 7
+
+2018-02-20/04:07:03.460 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:03.460 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:03.460 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:03.486 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:03.542 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:03.543 [DEBUG] Urgencia Media - tiempo de vida: 241
+
+2018-02-20/04:07:03.543 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:03.575 [INFO ] Pacientes en cola: 8
+
+2018-02-20/04:07:03.602 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:03.628 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:03.629 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:03.629 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:03.693 [INFO ] Pacientes en cola: 8
+
+2018-02-20/04:07:03.839 [INFO ] Pacientes en cola: 8
+
+2018-02-20/04:07:03.950 [INFO ] Pacientes en cola: 8
+
+2018-02-20/04:07:04.066 [INFO ] Pacientes en cola: 8
+
+2018-02-20/04:07:04.096 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/04:07:04.097 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/04:07:04.097 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:04.098 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:04.114 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:04.116 [INFO ] Termino aplicacion
+
+2018-02-20/04:07:04.117 [INFO ] Periodo 07:00 - 07:40
+
+2018-02-20/04:07:04.117 [INFO ] Periodo 07:40 - 10:22
+
+2018-02-20/04:07:04.118 [INFO ] Periodo 10:23 - 14:42
+
+2018-02-20/04:07:04.118 [INFO ] Periodo 14:43 - 18:00
+
+2018-02-20/04:07:04.118 [INFO ] Numero total de pacientes: 12
+
+2018-02-20/04:07:04.118 [INFO ] Numero pacientes Urgencia Alta: 12
+
+2018-02-20/04:07:04.118 [INFO ] Numero pacientes Urgencia Media: 3
+
+2018-02-20/04:07:04.119 [INFO ] Numero pacientes Urgencia Baja: 5
+
+2018-02-20/04:07:04.123 [INFO ] Espera Promedio: 7.833333333333333
+
+2018-02-20/04:07:04.123 [INFO ] Cantidad total de pacientes: 12
+
+2018-02-20/04:07:04.123 [INFO ] -------------------
+
+2018-02-20/04:07:04.124 [INFO ] Fin de Simulacion
+
+2018-02-20/04:07:04.187 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:05.091 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/04:07:05.091 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/04:07:05.092 [INFO ] Doctor 3 termino atención.
+
+2018-02-20/04:07:05.093 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/04:07:05.093 [INFO ] Doctor 0 termino atención.
+
+2018-02-20/04:07:05.092 [INFO ] Doctor 2 termino atención.
+
+2018-02-20/04:07:05.091 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/04:07:05.095 [INFO ] Doctor 4 termino atención.
+
+2018-02-20/04:07:05.092 [TRACE] Explota Doctorjava.lang.InterruptedException
+
+2018-02-20/04:07:05.095 [INFO ] Doctor 1 termino atención.
+
+2018-02-20/04:07:05.126 [INFO ] DoInBackGround Terminado
+
+2018-02-20/04:07:06.150 [INFO ] Carga Archivo de Urgencias Cantidad de periodos: 4
+
+2018-02-20/04:07:06.151 [INFO ] Comienza Simulación
+
+2018-02-20/04:07:06.152 [INFO ] T inicio: 360
+
+2018-02-20/04:07:06.152 [INFO ] T fin   : 1080
+
+2018-02-20/04:07:06.152 [INFO ] Ejecuta los Doctores: 5
+
+2018-02-20/04:07:06.153 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/04:07:06.153 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:06.154 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:06.154 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:06.155 [INFO ] Doctor 4 espera Pacientes
+
+2018-02-20/04:07:06.167 [INFO ] Fin Pintor
+
+2018-02-20/04:07:06.195 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:06.196 [INFO ] Inicio Pintor
+
+2018-02-20/04:07:06.196 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/04:07:06.209 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.209 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:06.209 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:06.209 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:06.210 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:06.210 [INFO ] Doctor 0 espera Pacientes
+
+2018-02-20/04:07:06.340 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:06.373 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:06.373 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:06.374 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.374 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:06.375 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:06.375 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:06.375 [INFO ] Doctor 3 espera Pacientes
+
+2018-02-20/04:07:06.458 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:06.458 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:06.458 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.459 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:06.459 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:06.460 [INFO ] Doctor 1 espera Pacientes
+
+2018-02-20/04:07:06.468 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:06.540 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:06.541 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/04:07:06.541 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.542 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:06.542 [INFO ] Doctor 2 espera Pacientes
+
+2018-02-20/04:07:06.585 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:06.662 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:06.663 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:06.663 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.664 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:06.704 [INFO ] Pacientes en cola: 0
+
+2018-02-20/04:07:06.788 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:06.788 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:06.789 [INFO ] Paciente en Cola:1
+
+2018-02-20/04:07:06.816 [INFO ] Pacientes en cola: 1
+
+2018-02-20/04:07:07.286 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.286 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:07.286 [INFO ] Paciente en Cola:2
+
+2018-02-20/04:07:07.411 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.413 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/04:07:07.413 [INFO ] Paciente en Cola:3
+
+2018-02-20/04:07:07.454 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.454 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:07.455 [INFO ] Paciente en Cola:4
+
+2018-02-20/04:07:07.496 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.497 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:07.497 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:07.541 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.542 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:07.542 [INFO ] Paciente en Cola:6
+
+2018-02-20/04:07:07.542 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:07.542 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:07.584 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.584 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:07.584 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:07.584 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:07.957 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:07.958 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:07.958 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:08.079 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:08.080 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:08.080 [INFO ] Paciente en Cola:6
+
+2018-02-20/04:07:08.405 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:08.523 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:08.691 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:08.691 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:08.692 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:08.766 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:08.814 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:08.814 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:08.814 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:08.978 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:08.978 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:08.978 [INFO ] Paciente en Cola:6
+
+2018-02-20/04:07:09.058 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:09.091 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:09.220 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:09.221 [DEBUG] Urgencia Media - tiempo de vida: 553
+
+2018-02-20/04:07:09.221 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:09.254 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:09.505 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:09.506 [DEBUG] Urgencia Media - tiempo de vida: 604
+
+2018-02-20/04:07:09.506 [INFO ] Paciente en Cola:5
+
+2018-02-20/04:07:09.587 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:09.587 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:09.588 [INFO ] Paciente en Cola:6
+
+2018-02-20/04:07:09.669 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:09.669 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:09.669 [INFO ] Paciente en Cola:7
+
+2018-02-20/04:07:09.912 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:09.916 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:09.916 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:09.957 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:09.957 [DEBUG] Urgencia Media - tiempo de vida: 453
+
+2018-02-20/04:07:09.957 [INFO ] Paciente en Cola:9
+
+2018-02-20/04:07:10.067 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:10.229 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:10.563 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:10.563 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:10.563 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:10.602 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:10.755 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:10.771 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:10.771 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/04:07:10.771 [INFO ] Paciente en Cola:7
+
+2018-02-20/04:07:10.812 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:10.812 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/04:07:10.812 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:10.842 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:10.853 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:10.853 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:10.853 [INFO ] Paciente en Cola:8
+
+2018-02-20/04:07:11.228 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:11.228 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:11.228 [INFO ] Paciente en Cola:9
+
+2018-02-20/04:07:11.340 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:11.434 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:11.435 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:11.435 [INFO ] Paciente en Cola:9
+
+2018-02-20/04:07:11.781 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:11.782 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:11.782 [INFO ] Paciente en Cola:10
+
+2018-02-20/04:07:11.904 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:11.905 [DEBUG] Urgencia Media - tiempo de vida: 542
+
+2018-02-20/04:07:11.905 [INFO ] Paciente en Cola:11
+
+2018-02-20/04:07:11.947 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:11.948 [DEBUG] Urgencia Alta - tiempo de vida: 33
+
+2018-02-20/04:07:11.948 [INFO ] Paciente en Cola:12
+
+2018-02-20/04:07:12.072 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.073 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.073 [INFO ] Paciente en Cola:13
+
+2018-02-20/04:07:12.245 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:12.283 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:12.372 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:12.453 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.453 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.454 [INFO ] Paciente en Cola:11
+
+2018-02-20/04:07:12.494 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:12.495 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:12.495 [INFO ] Paciente en Cola:12
+
+2018-02-20/04:07:12.535 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.536 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.536 [INFO ] Paciente en Cola:13
+
+2018-02-20/04:07:12.616 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.617 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.617 [INFO ] Paciente en Cola:14
+
+2018-02-20/04:07:12.658 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.658 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.658 [INFO ] Paciente en Cola:15
+
+2018-02-20/04:07:12.699 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:12.699 [DEBUG] Urgencia Media - tiempo de vida: 654
+
+2018-02-20/04:07:12.699 [INFO ] Paciente en Cola:16
+
+2018-02-20/04:07:12.902 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:12.903 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:12.903 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:12.903 [INFO ] Paciente en Cola:16
+
+2018-02-20/04:07:13.269 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:13.269 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:13.270 [INFO ] Paciente en Cola:17
+
+2018-02-20/04:07:13.351 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:13.392 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:13.513 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:13.513 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:13.513 [INFO ] Paciente en Cola:16
+
+2018-02-20/04:07:13.756 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:13.920 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:13.921 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/04:07:13.921 [INFO ] Paciente en Cola:16
+
+2018-02-20/04:07:14.003 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:14.004 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:14.004 [INFO ] Paciente en Cola:17
+
+2018-02-20/04:07:14.044 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:14.045 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:14.045 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:14.248 [INFO ] Ingreso Paciente Urgencia Media
+
+2018-02-20/04:07:14.249 [DEBUG] Urgencia Media - tiempo de vida: 244
+
+2018-02-20/04:07:14.249 [INFO ] Paciente en Cola:19
+
+2018-02-20/04:07:14.364 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:14.485 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:14.649 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:14.695 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:14.695 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:14.696 [INFO ] Paciente en Cola:17
+
+2018-02-20/04:07:14.778 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:14.778 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:14.778 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:14.850 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:15.708 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:15.708 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:15.709 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:15.713 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:15.880 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:15.881 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:15.881 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:15.954 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:15.962 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:15.962 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:15.962 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:16.332 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:16.332 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:16.333 [INFO ] Paciente en Cola:19
+
+2018-02-20/04:07:16.401 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:16.455 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:16.456 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:16.456 [INFO ] Paciente en Cola:19
+
+2018-02-20/04:07:16.523 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:17.006 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:17.111 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.112 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:17.112 [INFO ] Paciente en Cola:18
+
+2018-02-20/04:07:17.152 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.153 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:17.153 [INFO ] Paciente en Cola:19
+
+2018-02-20/04:07:17.193 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.194 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/04:07:17.194 [INFO ] Paciente en Cola:20
+
+2018-02-20/04:07:17.399 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.399 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/04:07:17.400 [INFO ] Paciente en Cola:21
+
+2018-02-20/04:07:17.521 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.522 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/04:07:17.522 [INFO ] Paciente en Cola:22
+
+2018-02-20/04:07:17.562 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:17.563 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:17.563 [INFO ] Paciente en Cola:23
+
+2018-02-20/04:07:17.987 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:18.112 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:18.161 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:18.223 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.223 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:18.223 [INFO ] Paciente en Cola:21
+
+2018-02-20/04:07:18.264 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.265 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/04:07:18.266 [INFO ] Paciente en Cola:22
+
+2018-02-20/04:07:18.468 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.469 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:18.469 [INFO ] Paciente en Cola:23
+
+2018-02-20/04:07:18.571 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:18.572 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:18.595 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.596 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:18.597 [INFO ] Paciente en Cola:22
+
+2018-02-20/04:07:18.637 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.638 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:18.638 [INFO ] Paciente en Cola:23
+
+2018-02-20/04:07:18.678 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:18.679 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:18.679 [INFO ] Paciente en Cola:24
+
+2018-02-20/04:07:19.081 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.082 [DEBUG] Urgencia Alta - tiempo de vida: 42
+
+2018-02-20/04:07:19.082 [INFO ] Paciente en Cola:25
+
+2018-02-20/04:07:19.162 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:19.203 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:19.245 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.246 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/04:07:19.246 [INFO ] Paciente en Cola:24
+
+2018-02-20/04:07:19.286 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.287 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/04:07:19.287 [INFO ] Paciente en Cola:25
+
+2018-02-20/04:07:19.327 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.328 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:19.328 [INFO ] Paciente en Cola:26
+
+2018-02-20/04:07:19.369 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.370 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:19.370 [INFO ] Paciente en Cola:27
+
+2018-02-20/04:07:19.615 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:19.661 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.662 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/04:07:19.662 [INFO ] Paciente en Cola:27
+
+2018-02-20/04:07:19.799 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:19.800 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:19.800 [INFO ] Paciente en Cola:28
+
+2018-02-20/04:07:19.881 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:19.881 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:19.882 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:19.962 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:20.084 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:20.084 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/04:07:20.084 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:20.165 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:20.246 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:20.246 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/04:07:20.246 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:20.374 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:20.375 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/04:07:20.375 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:20.415 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:20.416 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:20.416 [INFO ] Paciente en Cola:31
+
+2018-02-20/04:07:20.528 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:20.780 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:20.781 [DEBUG] Urgencia Alta - tiempo de vida: 38
+
+2018-02-20/04:07:20.781 [INFO ] Paciente en Cola:31
+
+2018-02-20/04:07:20.972 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:20.972 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:21.302 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:21.589 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:21.590 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/04:07:21.590 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:21.790 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:21.794 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:21.794 [DEBUG] Urgencia Alta - tiempo de vida: 30
+
+2018-02-20/04:07:21.795 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:21.830 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:21.871 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:21.875 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:21.877 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/04:07:21.877 [INFO ] Paciente en Cola:28
+
+2018-02-20/04:07:21.957 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:21.958 [DEBUG] Urgencia Alta - tiempo de vida: 40
+
+2018-02-20/04:07:21.958 [INFO ] Paciente en Cola:29
+
+2018-02-20/04:07:22.079 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:22.080 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:22.080 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:22.321 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:22.322 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:22.322 [INFO ] Paciente en Cola:31
+
+2018-02-20/04:07:22.530 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:22.533 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:22.533 [DEBUG] Urgencia Alta - tiempo de vida: 31
+
+2018-02-20/04:07:22.533 [INFO ] Paciente en Cola:31
+
+2018-02-20/04:07:22.734 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:22.739 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:22.901 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:22.902 [DEBUG] Urgencia Alta - tiempo de vida: 39
+
+2018-02-20/04:07:22.902 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:22.973 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:23.310 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:23.310 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:23.310 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:23.471 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:23.552 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:23.552 [DEBUG] Urgencia Alta - tiempo de vida: 43
+
+2018-02-20/04:07:23.552 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:23.717 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:23.717 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:23.717 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/04:07:23.718 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:23.798 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:23.799 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:23.799 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:23.799 [INFO ] Paciente en Cola:30
+
+2018-02-20/04:07:23.880 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:23.880 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/04:07:23.881 [INFO ] Paciente en Cola:31
+
+2018-02-20/04:07:24.002 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:24.003 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:24.003 [INFO ] Paciente en Cola:32
+
+2018-02-20/04:07:24.043 [INFO ] Ingreso Paciente Urgencia Baja
+
+2018-02-20/04:07:24.044 [DEBUG] Urgencia Baja - tiempo de vida: 2147483647
+
+2018-02-20/04:07:24.044 [INFO ] Paciente en Cola:33
+
+2018-02-20/04:07:24.167 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:24.168 [DEBUG] Urgencia Alta - tiempo de vida: 34
+
+2018-02-20/04:07:24.168 [INFO ] Paciente en Cola:34
+
+2018-02-20/04:07:24.424 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:24.424 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:24.424 [INFO ] Paciente en Cola:35
+
+2018-02-20/04:07:24.591 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:24.751 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:24.869 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:24.960 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:25.003 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.040 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:25.081 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:25.082 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/04:07:25.082 [INFO ] Paciente en Cola:33
+
+2018-02-20/04:07:25.132 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.162 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:25.255 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.371 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:25.377 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.499 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.541 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:25.542 [DEBUG] Urgencia Alta - tiempo de vida: 32
+
+2018-02-20/04:07:25.542 [INFO ] Paciente en Cola:32
+
+2018-02-20/04:07:25.582 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:25.583 [DEBUG] Urgencia Alta - tiempo de vida: 35
+
+2018-02-20/04:07:25.583 [INFO ] Paciente en Cola:33
+
+2018-02-20/04:07:25.615 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.704 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:25.704 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:25.704 [INFO ] Paciente en Cola:34
+
+2018-02-20/04:07:25.737 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.785 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:25.785 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:25.786 [INFO ] Paciente en Cola:35
+
+2018-02-20/04:07:25.843 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:25.951 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.057 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.108 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:26.109 [DEBUG] Urgencia Alta - tiempo de vida: 41
+
+2018-02-20/04:07:26.109 [INFO ] Paciente en Cola:36
+
+2018-02-20/04:07:26.165 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.191 [INFO ] 	Doctor 1	Atiende Paciente
+
+2018-02-20/04:07:26.232 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:26.232 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:26.232 [INFO ] Paciente en Cola:36
+
+2018-02-20/04:07:26.271 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.377 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.484 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.555 [INFO ] 	Doctor 2	Atiende Paciente
+
+2018-02-20/04:07:26.591 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.595 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:26.595 [DEBUG] Urgencia Alta - tiempo de vida: 37
+
+2018-02-20/04:07:26.595 [INFO ] Paciente en Cola:36
+
+2018-02-20/04:07:26.636 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:26.636 [DEBUG] Urgencia Alta - tiempo de vida: 44
+
+2018-02-20/04:07:26.636 [INFO ] Paciente en Cola:37
+
+2018-02-20/04:07:26.637 [INFO ] 	Doctor 0	Atiende Paciente
+
+2018-02-20/04:07:26.701 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.766 [INFO ] 	Doctor 3	Atiende Paciente
+
+2018-02-20/04:07:26.812 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.926 [INFO ] Pacientes en cola: 23
+
+2018-02-20/04:07:26.981 [INFO ] Ingreso Paciente Urgencia ALta
+
+2018-02-20/04:07:26.981 [DEBUG] Urgencia Alta - tiempo de vida: 36
+
+2018-02-20/04:07:26.981 [INFO ] Paciente en Cola:36
+
+2018-02-20/04:07:27.021 [INFO ] 	Doctor 4	Atiende Paciente
+
+2018-02-20/04:07:27.051 [INFO ] Pacientes en cola: 23

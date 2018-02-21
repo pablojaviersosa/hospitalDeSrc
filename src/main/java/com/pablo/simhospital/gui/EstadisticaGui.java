@@ -410,7 +410,7 @@ public class EstadisticaGui {
 		/* Boton */
 		btn_Back = new JButton();
 		btn_Back.setIcon(config.getIconos().getIconBack());
-		btn_Back.setToolTipText(IdiomaGui.getBtnBackAyudaMsj());
+//		btn_Back.setToolTipText(IdiomaGui.getBtnBackAyudaMsj());
 		btn_Back.setBackground(null);
 		btn_Back.setBorderPainted(false);
 		btn_Back.setFocusPainted(false);
