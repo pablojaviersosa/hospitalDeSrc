@@ -35,3 +35,9 @@ _____
 
 ##### De siete a siete cuarenta hay 20%de probabilidad de que ingrese un paciente de urgencia alta, 40% media y 0% baja.
 ____
+
+##### El programa cuenta con un log que da cuenta de las atenciones de los pacientes y que doctor lo atandio. Luego de ejecutar el programa debe aparecer la carpeta "log" con un maximo de archivos configurado en la carpeta /main/config/log4j.properties
+___
+
+
+
