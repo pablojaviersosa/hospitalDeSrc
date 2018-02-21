@@ -22,7 +22,7 @@ public class Configuracion {
         setIconos(new IconosGui());
         setIdioma(new IdiomaGui());
         setValoresDef(new ValoresPorDefectoGui());
-        setMusica(new MusicaGui());
+//        setMusica(new MusicaGui());
 	}
 
 	public static ValoresPorDefectoGui getValoresDef() {

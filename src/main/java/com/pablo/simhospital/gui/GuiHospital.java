@@ -95,8 +95,7 @@ public class GuiHospital {
 		// musica
 		hiloMusical = Executors.newCachedThreadPool();
 		try {
-			MusicaGui player = new MusicaGui();
-			hiloMusical.execute(player);
+			hiloMusical.execute(new MusicaGui());
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

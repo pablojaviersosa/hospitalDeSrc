@@ -15,10 +15,10 @@ public class MusicaGui implements Runnable {
 	public MusicaGui() {
 		String strFilename = getPathRecursoMusica()+getNombreRecursoMusica();
 		try {
-			input = InputStream.class.getResourceAsStream(strFilename);
+			setInput(InputStream.class.getResourceAsStream(strFilename));
 		} catch (Exception e) {
 			try {
-				input = new FileInputStream(strFilename);
+				setInput(new FileInputStream(strFilename));
 			} catch (Exception e2) {
 				// TODO: handle exception
 				System.err.println("No se pudo cargar la musica" + "\n" +strFilename);
@@ -37,9 +37,8 @@ public class MusicaGui implements Runnable {
 	}
 	public void playSound() {
 		
-		 try {
-				
-				getMusica().play();
+		 try {				
+			 getMusica().play();
 			} catch (Exception e2) {
 				// TODO: handle exception
 				e2.printStackTrace();
@@ -50,7 +49,6 @@ public class MusicaGui implements Runnable {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
 		this.playSound();
 	}
 
